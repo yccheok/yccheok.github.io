@@ -12,8 +12,28 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function woahbar_show() { 
+        $('.woahbar').show('bounce', { times:3, distance:15 }, 100); 
+        $('body').animate({"marginTop": "2.4em"}, 250);
+    }
+
+    $().ready(function() {
+        window.setTimeout(function() {
+            woahbar_show();
+        }, 1000);
+    });
+</script>
+
 </head>
 <body>
+
+<div class="woahbar" style="display:none">
+    <span>
+        If you are enjoying JStock, please consider rating us 5 stars in the market. Thank you <a class="woahbar-link" href="http://goo.gl/vPSRXG">LEARN MORE!</a>
+    </span>
+</div>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
