@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>隐私信息 - JStock</title>
+<meta name="description" content="JStock 让您轻松地处理您的股票投资。她提供了良好的股市讯息，使您作出最佳的投资决策。" /> 
+<meta name="keywords" content="免费股市软件, 免费炒股软件" /> 
+<meta http-equiv="Content-Language" content="zh" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+</head> 
+<body> 
+<div id="wrap"> 
+ 
+<div id="top"></div> 
+ 
+<div id="content"> 
+ 
+<div class="banner"> 
+</div> 
+ 
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">首页</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">下载</a></li>
+    <li>&middot;</li>
+    <li><a href="features.html">功能</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">指标</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">口碑</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a href="javascript:void(0)"><u>帮助</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">安装及升级</a></li>
+            <li><a href="help_real_time_info.html">股票观察表</a></li>
+            <li><a href="help_stock_indicator_editor.html">股票指标编辑器</a></li>
+            <li><a href="help_stock_indicator_scanner.html">股票指标扫描仪</a></li>
+            <li><a href="help_portfolio_management.html">投资组合管理</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">常见问题</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">捐赠</a></li>              
+            <li><a href="contact.html">联络</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/cn.png" /><u>中文</u></a>
+        <ul>
+            <li><a href="../privacy.html"><img border="0" src="images/country/us.png" />English</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+ 
+<div class="middle">
+ 
+<div class="adv" align="left"> 
+</div> 
+ 
+<div class="h-container"><h2>云储存的隐私信息 </h2></div> 
+<div class="faq">
+<ul>
+<li><b>资料是储存在您私人 Google Drive 帐户。没人能读取您的资料。除了您本身。</b></li>
+<li>您必须要有<a href="http://drive.google.com">免费 Google Drive 帐户</a>，以享用云储存功能。</li>
+<li>我们会用以下的文件名来储存 - jstock-fe78440e-e0fe-4efb-881d-264a01be483c-checksum=...-date=...-version=....zip</li>
+<li>您敏感的个人资料将不会被储存：谷歌密码，交谈用户名，交谈密码。您可聘请程序员检查我们的<a href="http://jstock.hg.sourceforge.net/hgweb/jstock/jstock/file/f112386259a4/src/org/yccheok/jstock/gui/Utils.java#l1448">代码</a>，<a href="http://jstock.hg.sourceforge.net/hgweb/jstock/jstock/file/f112386259a4/src/org/yccheok/jstock/gui/Utils.java#l1116">代码</a>，<a href="http://jstock.hg.sourceforge.net/hgweb/jstock/jstock/file/f112386259a4/src/org/yccheok/jstock/gui/JStockOptions.java#l292">代码</a>和<a href="http://jstock.hg.sourceforge.net/hgweb/jstock/jstock/file/f112386259a4/src/org/yccheok/jstock/gui/JStockOptions.java#l403">代码</a>。</li>
+<li>您的云资料将会储存在谷歌拥有的服务器。</li>
+<li>你将永远会通过 <a href="http://code.google.com/apis/gdata/auth.html">Google Data API</a> 认证。</li>
+<li>所有 JStock 与服务器的沟通，将会通过高保安性能的<a href="http://zh.wikipedia.org/zh/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8">安全套接层</a>协议。</li>
+</ul>
+</div>
+ 
+</div> 
+ 
+<div id="clear"></div> 
+ 
+</div> 
+ 
+<div id="bottom"></div> 
+ 
+</div> 
+ 
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-43627934-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+ 
+<div id="footer">
+请支持<a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">捐赠</a> &middot; 内容许可证 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a>
+</div>
+ 
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body> 
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Help : Stock Indicator Editor - JStock</title>
+<meta name="description" content="JStock makes it easy to track your stock investment. It provides well organized stock market information, to help you decide your best investment strategy." /> 
+<meta name="keywords" content="free stock market software, free stock investment software" /> 
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">Home</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">Download</a></li>
+    <li>&middot;</li>
+    <li><a href="features.html">Features</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">Indicators</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">Testimonial</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a class="current_page" href="javascript:void(0)"><u>Help</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">Install & Upgrade</a></li>
+            <li><a href="help_real_time_info.html">Stock Watchlist</a></li>
+            <li><a href="help_stock_indicator_editor.html">Stock Indicator Editor</a></li>
+            <li><a href="help_stock_indicator_scanner.html">Stock Indicator Scanner</a></li>
+            <li><a href="help_portfolio_management.html">Portfolio Management</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">FAQ</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">Donation</a></li>              
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </li>  
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/us.png" /><u>English</u></a>
+        <ul>
+            <li><a href="zh/help_stock_indicator_editor.html"><img border="0" src="images/country/cn.png" />中文</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div class="help-section">
+<div style="float : left">
+<div class="h-container"><h2>Stock Indicator Editor</h2></div>
+
+<br />
+
+<div>
+<p><a href="#get-start">How can I get start with Stock Indicator Editor?</a></p>
+<p><a href="#indicator-function">What kind of functionality you had provided for me to build my own indicator?</a></p>
+<p><a href="#indicator-example">Can you show me an example on how to build an indicator?</a></p><br />
+<p><a href="#share-indicator">What is the best way for me to share my indicator with friends?</a></p>
+<p><a href="#skip-n-days">How can I specific "N days back 14 days moving average"?</a></p>
+<p><a href="#macd">I would like to perform MACD scanning.</a></p><br />
+</div>
+</div>
+
+<div style="float : right" align="right">
+<!-- Advertisement -->
+</div>
+<div style="clear : both"></div>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="get-start">How can I get start with Stock Indicator Editor?</h3></div>
+<div class="faq">
+    <ul>
+    <li>The best way to get start with <i>Stock Indicator Editor</i>, is to start with our pre-built indicators. You may install pre-built indicators, by clicking on <i>Install...</i>.&nbsp;<img align="top" src="images/help/install.png" title="Install" alt="Install"/></li>
+    <li>Select <i>Install from JStock Server</i>, and click <i>Next</i>.&nbsp;<img align="top" src="images/help/install-indicator-page0.png" title="Install Indicator Page 0" alt="Install Indicator Page 0"/></li>
+    <li>Select indicators you wish to install, and click <i>Next</i>. We highly recommend you select all indicators.&nbsp;<img align="top" src="images/help/install-indicator-page1.png" title="Install Indicator Page 1" alt="Install Indicator Page 1"/></li>
+    <li>Click <i>Finish</i>.&nbsp;<img align="top" src="images/help/install-indicator-page2.png" title="Install Indicator Page 2" alt="Install Indicator Page 2"/></li>     
+    <li>You may test on the indicator, by entering a stock, and press <i>Simulate</i>.&nbsp;<img align="top" src="images/help/simulate-indicator.png" title="Simulate Indicator" alt="Simulate Indicator"/></li>    
+    </ul>
+</div>
+
+<br />
+<div class="h-container"><h3 id="indicator-function">What kind of functionality you had provided for me to build my own indicator?</h3></div>
+<div>
+User may then access the indicator components from the following toolbar.&nbsp;<img align="top" src="images/help/stock-indicator-editor-toolbar.png" title="Indicator Editor Toolbar" alt="Indicator Editor Toolbar"/>
+</div>
+<div>
+Each of the component's functionality is described as below.
+</div>
+<table id="indicator_table">
+    <tr><td width="100">Component</td><td width="100">Icon</td><td width="600">Description</td></tr>
+
+    <tr>
+    <td>Alert</td>
+    <td><img src="images/help/bell.png"/></td>
+    <td>In every indicator which you built, it must consist at least (and only) single alert component.</td>
+    </tr>
+
+    <tr>
+    <td>Real time stock information</td>
+    <td><img src="images/help/bookmark.png"/></td>
+    <td>This represents today real time stock information. You may choose Open Price, Last Price, High Price, Low Price, Typical Price ([High + Low + Last Price] / 3), Volume, Change Price, Change Price in Percentage, Last Volume, 1st/2nd/3rd Buy Price, 1st/2nd/3rd Buy Quantity, 1st/2nd/3rd Sell Price, 1st/2nd/3rd Sell Quantity.</td>
+    </tr>
+
+    <tr>
+    <td>Stock history information</td>
+    <td><img src="images/help/bookmarks_list_add2.png"/></td>
+    <td>You may specific the stock history information in specific date. For example, you may specific average stock last price information from 14th June 2005 to 16th December 2006. You may either choose Maximum, Minimum, Average (Simple Moving Average), Mean Deviation, MACD, RSI (Relative Strength Index), EMA (Exponential Moving Average). You may also choose Open Price, Last Price, High Price, Low Price, Typical Price ([High + Low + Last Price] / 3), and Volume.</td>
+    </tr>
+
+    <tr>
+    <td>Stock relative history information</td>
+    <td><img src="images/help/bookmarks_list_add.png"/></td>
+    <td>You may specific the stock relative history information in specific date. For example, you may specific average stock last 14 days price information. You may either choose Maximum, Minimum, Average (Simple Moving Average), Mean Deviation, MACD, RSI (Relative Strength Index), EMA (Exponential Moving Average). You may also choose Open Price, Last Price, High Price, Low Price, Typical Price ([High + Low + Last Price] / 3), and Volume.</td>
+    </tr>
+
+    <tr>
+    <td>Constant</td>
+    <td><img src="images/help/constant.png"/></td>
+    <td>You may specific any constant number like 1, 10, 200, -5.</td>
+    </tr>
+
+    <tr>
+    <td>Arithmetic</td>
+    <td><img src="images/help/math.png"/></td>
+    <td>You may perform one of the arithmetic operation, add/ minus/ multiplication/ division.</td>
+    </tr>
+
+    <tr>
+    <td>Function</td>
+    <td><img src="images/help/function.png"/></td>
+    <td>You may perform one of the function operation, absolute/ square.</td>
+    </tr>
+    
+    <tr>
+    <td>Comparison</td>
+    <td><img src="images/help/compare.png"/></td>
+    <td>You may perform the following equality/ comparison operation, equal/ greater than/ lesser than/ equal or greater than/ equal or lesser than.</td>
+    </tr>
+
+    <tr>
+    <td>Logical</td>
+    <td><img src="images/help/logical.png"/></td>
+    <td>You may perform the following logical operation. There are two : OR/ AND. For example, you want something
+    <br />"When today price is lesser than yesterday price OR today volume is lesser than yesterday volume"
+    <br />"When today price is lesser than yesterday price AND today volume is lesser than yesterday volume"
+    </td>
+    </tr>
+</table>
+<br />
+
+<div class="h-container"><h3 id="indicator-example">Can you show me an example on how to build an indicator?</h3></div>
+<div>
+Here is an example, to show you how to build a simple indicator, to find out stock "its closing price is in 14 days highest". First, we will draft out our equation to Real Time Stock's Last Price >= Maximum from 14 days Stock's Last Price From the equation, we know that we need the following components :
+</div>
+<div class="faq">
+    <ul>
+    <li>Real time stock information&nbsp;<img src="images/help/bookmark.png"/></li> 
+    <li>Relative stock history&nbsp;<img src="images/help/bookmarks_list_add.png"/></li> 
+    <li>Equality&nbsp;<img src="images/help/compare.png"/></li> 
+    <li>Alert&nbsp;<img src="images/help/bell.png"/></li> 
+    </ul>
+</div>
+<br />
+<div class="sms_alert">
+    <div class="thumbnail">
+        <a rel="lightbox" title="Place 4 components on the drawing area" href="images/indicator-editor/0.png"><img height="75" width="120" src="images/indicator-editor/0s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="Place 4 components on the drawing area" href="images/indicator-editor/0.png">Place</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="Connect all the 4 components" href="images/indicator-editor/1.png"><img height="75" width="120" src="images/indicator-editor/1s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="Connect all the 4 components" href="images/indicator-editor/1.png">Connect</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="Change the properties of Relative Stock History to 14 Days Max LastPrice, and Equality to GreaterOrEqual" href="images/indicator-editor/2.png"><img height="75" width="120" src="images/indicator-editor/2s.png"/></a>
+        <div class="caption">
+            <a title="Change the properties of Relative Stock History to 14 Days Max LastPrice, and Equality to GreaterOrEqual" rel="lightbox" href="images/indicator-editor/2.png">Success</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="Save and simulate" href="images/indicator-editor/3.png"><img height="75" width="120" src="images/indicator-editor/3s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="Save and simulate" href="images/indicator-editor/3.png">Testing</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+initLightbox();
+</script>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 336x280, created 10/23/09 */
+google_ad_slot = "8965095522";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="share-indicator">What is the best way for me to share my indicator with friends?</h3></div>
+<div class="faq">
+    <ul>
+    <li>Right click on the indicator name and select <i>Export...</i>.&nbsp;<img align="top" src="images/help/export.png" title="Export" alt="Export"/></li>
+    <li>A zip file will be saved. Email the zip file to your friend.</li>
+    <li>You friend might install it, by clicking on <i>Install...</i>, and select <i>Install from local file</i>.&nbsp;<img align="top" src="images/help/install.png" title="Install" alt="Install"/></li>
+    </ul>
+</div>
+<br />
+
+<div class="h-container"><h3 id="skip-n-days">How can I specific "N days back 14 days moving average"?</h3></div>
+<div class="faq">
+There is a <i>skipDay</i> field in <i>Stock relative history information</i>, where you may specific N days back. For instance, you would like to know 1 week ago 14 days moving average. You may assign 7 in <i>skipDay</i>, to indicate 1 week ago.&nbsp;<img align="top" src="images/help/skip-n-days.png" title="Skip N days"/>
+</div>
+<br />
+
+<div class="h-container"><h3 id="macd">I would like to perform MACD scanning.</h3></div>
+<div class="faq">
+We implement MACD feature in both <i>Stock relative history information</i> and <i>Stock history information</i>. We are using 26-days slow period, and 12-days fast period.
+
+<ul>
+<li>MACD : (12-day EMA - 26-day EMA)</li>
+<li>MACDSignal : N-day EMA of MACD Line</li>
+<li>MACDHist : MACD Line - Signal Line</li>
+</ul>
+	
+</div>
+<br />
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-43627934-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<div id="footer">
+Please support by <a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">donating</a> &middot; Content under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a> &middot; <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=108599022497670" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>
