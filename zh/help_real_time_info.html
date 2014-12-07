@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>帮助：股票观察表 - JStock</title>
+<meta name="description" content="JStock 让您轻松地处理您的股票投资。她提供了良好的股市讯息，使您作出最佳的投资决策。" /> 
+<meta name="keywords" content="免费股市软件, 免费炒股软件" /> 
+<meta http-equiv="Content-Language" content="zh" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<script type="text/javascript">
+<!--
+function verify_code(code)
+{
+    window.location = "http://finance.yahoo.com/q?s=" + code;
+}
+
+$(function () {    
+    $('input#verify-input').bind("keypress", function (e) {
+        var code = (e.keyCode ? e.keyCode : e.which);
+         if (code != 13) { //Enter keycode
+            return;
+         }
+    
+        var value = $('input#verify-input').attr('value');
+        if (!value) {
+            alert('Please enter stock code.');
+        }
+        else {
+            verify_code(value);
+        }
+    });
+
+    $('a.verify').bind("click", function (e) {   
+        var value = $('input#verify-input').attr('value');
+        if (!value) {
+            alert('Please enter stock code.');
+        }
+        else {
+            verify_code(value);
+        }
+    });
+    
+    $('.loading').each(function() {
+        var me = $(this);
+        var image = me.attr("image");
+        var img = new Image();
+        $(img).load(function () {
+            //$(this).css('display', 'none'); // .hide() doesn't work in Safari when the element isn't on the DOM already
+            $(this).hide();
+            me.removeClass('loading').append(this);                
+            $(this).fadeIn();                
+        }).error(function () {
+            // notify the user that the image could not be loaded
+        }).attr('src', image);
+
+    });        
+});
+//-->
+</script>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">首页</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">下载</a></li>
+    <li>&middot;</li>
+    <li><a href="features.html">功能</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">指标</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">口碑</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a class="current_page" href="javascript:void(0)"><u>帮助</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">安装及升级</a></li>
+            <li><a href="help_real_time_info.html">股票观察表</a></li>
+            <li><a href="help_stock_indicator_editor.html">股票指标编辑器</a></li>
+            <li><a href="help_stock_indicator_scanner.html">股票指标扫描仪</a></li>
+            <li><a href="help_portfolio_management.html">投资组合管理</a></li>
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">常见问题</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">捐赠</a></li>              
+            <li><a href="contact.html">联络</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/cn.png" /><u>中文</u></a>
+        <ul>
+            <li><a href="../help_real_time_info.html"><img border="0" src="images/country/us.png" />English</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div class="help-section">
+<div style="float : left">
+<div class="h-container"><h2>股票观察表</h2></div>
+
+<br />
+
+<div>
+<p><a href="#select-country">我要选择国家。</a></p>
+<p><a href="#insert-stock">我要添加股票。</a></p>
+<p><a href="#multi-columns">JStock 显示出一系列一样名称的股票。</a></p><br />
+<p><a href="#new-database">我找不到某某股票。</a></p>
+<p><a href="#view-history">如何查看股票的历史？</a></p>
+<p><a href="#stock-alert">当股票的价格达到一定水平，我希望被通知。</a></p><br />
+<p><a href="#sms-alert">我如何才能收到 JStock 短讯警报？</a></p>
+<p><a href="#email-alert">我希望从我公司的电子邮件收到股票警报。</a></p>
+<p><a href="#scanning-speed">JStock 占用太多的网络带宽！</a></p><br />
+<p><a href="#no-connection">没有网络连接。股票价格不被更新。</a></p>
+<p><a href="#delay">股票价格有延误有吗？</a></p>
+<p><a href="#price-source">我如何能选择 Yahoo! 财经或 Google 财经成为价格来源?</a></p>
+<p><a href="#yellow-info-box">可有快捷键，来移动图表的黄色讯息框？</a></p><br />
+<p><a href="#update-database">我发现 JStock 提议的股票表不是最新的。</a></p>
+<p><a href="#intraday-chart">即日鲜图表呢？</a></p><br />
+</div>
+</div>
+
+<div style="float : right" align="right">
+<!-- Advertisement -->
+</div>
+<div style="clear : both"></div>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="select-country">我要选择国家</h3></div>
+<div>
+前往 JStock 顶部菜单中的"国家"，并选择您想要的国家。目前，总共有26个被支援的国家。
+</div>
+<br />
+
+<div class="h-container"><h3 id="insert-stock">我要添加股票。</h3></div>
+<div>
+
+在"股票观察表"页面的中间，有一个文本框。要添加股票，只需输入股票简称前缀，股票代码或汉语拼音。然后按 ENTER 键。智能股票查询系统将提示您可供选择的股票。&nbsp;<img align="top" src="images/help/auto-complete-combo-box.png" title="自动完成组合框" alt="自动完成组合框"/> 
+</div>
+<br />
+
+<div class="h-container"><h3 id="multi-columns">JStock 显示出一系列一样名称的股票。</h3></div>
+<div>
+这种情况会发生，如果您的国家有多个交易所。为了避免混淆，您可以去"选项-> 选项...-> 用户界面"。选者"显示2列股票信息"。过后，您就可看到一下的股票列表。&nbsp;<img align="top" src="images/help/multi-columns.png" title="多列股票表" alt="多列股票表"/> 
+</div>
+<br />
+
+<div class="h-container"><h3 id="new-database">我找不到某某股票。</h3></div>
+<p>
+	<div class="faq">
+		<ul>
+		<li>前往"数据库-> 股票数据库..."</li>
+        <li>下面的屏幕将被显示。&nbsp;<img align="top" title="Stock Database" alt="Stock Database" src="images/help/database.png"/></li>
+        <li>在文本框输入股票代码，JStock 会提供您一系列股票供选择。&nbsp;<img align="top" title="Stock Database Suggestion" alt="Stock Database Suggestion" src="images/help/database-suggestion.png"/><</li>
+        <li>（可选）如您对 JStock 的选项不满意，您可双点击名称自行编辑。</li>
+        <li>（可选）如您知道股票代码，如5199WA.KL，只需在文本框输入“5199WA.KL”，再按回车键。</li>
+		</ul>
+	</div>   
+</p>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 336x280, created 10/23/09 */
+google_ad_slot = "8965095522";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="sms-alert">我如何才能收到 JStock 短讯警报？</h3></div>
+<p>
+
+
+你需要一个<a href="http://www.google.com/calendar">谷歌日历</a>帐户，并注册您的手机。只要遵循以下4个步骤，您就能启用 JStock 短信警报功能。欲了解更多信息，请访问 <a href="http://www.google.com/support/calendar/bin/answer.py?hl=cn&answer=45351">谷歌日历帮助</a>。这项免费服务是由谷歌提供的。请看<a href="http://www.google.com/support/calendar/bin/answer.py?hl=cn&answer=37173">短讯通知的费用</a>。
+</p>
+<br />
+<div class="sms_alert">
+    <div class="thumbnail">
+        <a rel="lightbox" title="点击访问您的移动电话验证设置" href="images/sms/0.png"><img height="75" width="120" src="images/sms/0s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="点击访问您的移动电话验证设置" href="images/sms/0.png">设置</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="输入您移动电话资料以接受验证代码" href="images/sms/1.png"><img height="75" width="120" src="images/sms/1s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="输入您移动电话资料以接受验证代码" href="images/sms/1.png">验证</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="输入您收到的验证代码以注册您移动电话" href="images/sms/2.png"><img height="75" width="120" src="images/sms/2s.png"/></a>
+        <div class="caption">
+            <a title="输入您收到的验证代码以注册您移动电话" rel="lightbox" href="images/sms/2.png">成功</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="在 JStock 输入您谷歌日历用户名和密码" href="images/sms/3.png"><img height="75" width="120" src="images/sms/3s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="在 JStock 输入您谷歌日历用户名和密码" href="images/sms/3.png">测试</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+initLightbox();
+</script>
+
+<br />
+
+<div class="h-container"><h3 id="view-history">如何查看股票的历史？</h3></div>
+<div>
+用鼠标点击任何股票。通过以下的图标选择"历史..."&nbsp;<img align="top" src="images/help/history-icon.png" title="历史图标" alt="历史图标"/>。
+</div>
+<br />
+
+<div class="h-container"><h3 id="stock-alert">当股票的价格达到一定水平，我希望被通知。</h3></div>
+<div>
+
+键入您想要的股票价格在"低价警报"与"高价警报"栏。&nbsp;<img align="top" src="images/help/fallbelow-and-riseabove.png" title="低价警报与高价警报" alt="低价警报与高价警报"/>
+</div>
+<div class="faq">
+    <ul>
+    <li>低价警报 - 如果股票的最后价格低于或等于这个值，您将收到警报。</i>
+    <li>高价警报 - 如果股票的最后价格高于或等于这个值，您将收到警报。</i>    
+    </ul>
+</div>
+<div>
+
+记得在这里选择您喜欢的警报方式"选项-> 选项...-> 警报"。
+</div>
+<br />
+
+<div class="h-container"><h3 id="email-alert">我希望从我公司的电子邮件收到股票警报。</h3></div>
+<div>
+前往"选项-> 选项...-> 警报"。您必须有一个免费的 <a href="http://www.gmail.com">GMail</a> 帐户，以接收通过电子邮件库存警报。但是，我们也支援任何电子邮件地址。您可以在"抄送"项目中输入其他的电子邮件地址。&nbsp;<img align="top" src="images/help/email-alert.png" title="电子邮件警报" alt="电子邮件警报"/>
+</div>
+<br />
+
+<div class="h-container"><h3 id="scanning-speed">JStock 占用太多的网络带宽！</h3></div>
+<p>
+    默认情况下，JStock 的股票价格刷新速度为5秒。 为了节省您的网络带宽，您可把它调整到更高的价值，如60分钟。 
+    <div class="faq">
+        <ul>
+        <li>前往"选项-> 选项...-> 速度"。&nbsp;<img align="top" src="images/help/scanning-speed.png" title="Scanning Speed" alt="Scanning Speed"/></li>
+        <li>调整到60分钟。越高数值，刷新速度就会越慢。</li>
+        <li>越慢的刷新速度，JStock 就不会频密地联系服务器。</li>
+        <li>就这样，她就不会占用太多的网络带宽。</li>
+        <li>每当您想要马上刷新股价, 只需前往"编辑-> 刷新股价"。</li> 
+        <li>或，您可以用"Ctrl + R"键盘快捷键马上刷新股价。</li>
+        </ul>
+    </div>
+</p>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-6557918363491706";
+/* 234x60, created 3/4/09 */
+google_ad_slot = "3741563114";
+google_ad_width = 234;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="no-connection">没有网络连接。股票价格不被更新。</h3></div>
+<div>很可能您处在公司的网络中。请尝试以下。</div>
+<div class="faq">
+    <ul>
+    <li>前往"选项-> 选项...-> 网路"，寻找下面的按钮。&nbsp;<img align="top" src="images/help/detect-proxy-and-test-connection-button.png" title="检测代理服务器及测试连接按钮" alt="检测代理服务器及测试连接按钮"/></i>
+    <li>点击"测试连接"。它是否给你任何提示？</li>
+    <li>点击"检测代理服务器"。如果它建议您一个新的代理服务器，点击"确定"。是否有帮助？</li>
+    <li>重新启动 JStock 。现在它能正常操作吗？</li>
+    <li>抱歉，您必须咨询您的网络管理员了。（提示：要善待他们）</li>
+    </ul>
+</div>
+<br />
+
+<div class="h-container"><h3 id="delay">股票价格有延误有吗？</h3></div>
+<div>目前，JStock 的股票价格是取自于 Yahoo! 财经及 Google 财经。取决于国家，股票价格可以是实时或迟延。</div>
+<div class="faq">
+    <ul>
+        <li>Australia, Yahoo! 财经 : 迟延</li>
+        <li>Austria, Yahoo! 财经 : 迟延</li>
+        <li>Belgium, Yahoo! 财经 : 迟延</li>
+        <li>Brazil, Yahoo! 财经 : 迟延</li>
+        <li>Canada, Yahoo! 财经 : 迟延</li>
+        <li>China, <font color="#3B6EBF"><b>Google 财经 : 实时</b></font></li>
+        <li>Denmark, Yahoo! 财经 : 迟延</li>
+        <li>France, Yahoo! 财经 : 迟延</li>
+        <li>Germany, Yahoo! 财经 : 迟延</li>
+        <li>Hong Kong, Google 财经 : 迟延 or Yahoo! 财经 : 迟延</li>
+        <li>India, <font color="#3B6EBF"><b>Google 财经 : 实时</b></font></li>
+        <li>Indonesia, Yahoo! 财经 : 迟延</li>
+        <li>Israel, Yahoo! 财经 : 迟延</li>
+        <li>Italy, Yahoo! 财经 : 迟延</li>
+        <li>Korea, Yahoo! 财经 : 迟延</li>                    
+        <li>Malaysia, Yahoo! 财经 : 迟延</li>
+        <li>Netherlands, Yahoo! 财经 : 迟延</li>     
+        <li>NewZealand, Yahoo! 财经 : 迟延</li>
+        <li>Norway, Yahoo! 财经 : 迟延</li>
+        <li>Portugal, Yahoo! 财经 : 迟延</li>
+        <li>Singapore, <font color="#3B6EBF"><b>Google 财经 : 实时</b></font> or Yahoo! 财经 : 迟延</li>
+        <li>Sweden, Yahoo! 财经 : 迟延</li>
+        <li>Switzerland, Yahoo! 财经 : 迟延</li>
+        <li>Taiwan, <font color="#3B6EBF"><b>Google 财经 : 实时</b></font> or Yahoo! 财经 : 迟延</li>
+        <li>United Kingdom, <font color="#3B6EBF"><b>Google 财经 : 实时</b></font> or Yahoo! 财经 : 迟延</li>
+        <li>United State, <font color="#3B6EBF"><b>Google 财经 : 实时</b></font> or Yahoo! 财经 : 迟延</li>        
+    </ul>
+</div>
+<div>
+更多详情, 请参阅 <a href="http://finance.yahoo.com/exchanges">Yahoo! Finance - Exchanges</a> 或 <a href="https://www.google.com/intl/en/googlefinance/disclaimer/">Google Finance - Finance Data Listing and Disclaimers</a>.
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="price-source">我如何能选择 Yahoo! 财经或 Google 财经成为价格来源?</h3></div>
+<div>
+ 前往"选项-> 选项...-> 网路"。备注，有的国家只有单一选项。<br/><img align="top" src="images/help/price_source.png" title="Price source" alt="Price source"/>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="yellow-info-box">可有快捷键，来移动图表的黄色讯息框？</h3></div>
+<div>
+
+除了滑鼠，您可用左右方向键。
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="update-database">我发现 JStock 提议的股票表不是最新的。</h3></div>
+<div>
+尝试双点击网路图标，看能不能得到最新的股票资料库。<img align="top" src="images/help/network-icon.png" title="网路图标" alt="网路图标"/>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="intraday-chart">即日鲜图表呢？</h3></div>
+<div>
+我们把她隐藏着了。要显示他，您可以通过"选项-> 选项...-> 用户界面"。勾选上"显示即日鲜图表"。<br/><img align="top" src="images/help/show-intraday-chart.png" title="显示即日鲜图表" alt="显示即日鲜图表"/>
+</div>
+
+<br />
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-43627934-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<div id="footer">
+请支持<a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">捐赠</a> &middot; 内容许可证 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a> &middot; <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=108599022497670" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

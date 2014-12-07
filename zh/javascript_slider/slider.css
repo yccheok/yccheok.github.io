@@ -1,0 +1,11 @@
+#slider {float:left;width:200px;padding:10px 21px 0px 0px;}
+.header {width:180px; border:1px solid #E1E1E1; padding:8px; font-weight:bold; margin-top:5px; cursor:pointer;}
+.header:hover {background: #FFF8DD;}
+.text {width:180px; border:1px solid #E1E1E1; border-top:none; padding:8px}
+.text:hover {background: #FFF8DD;}
+.current {background: #FFF8DD;}
+
+.header img {
+    padding: 0px 5px 0px 0px;
+    float: left;
+}

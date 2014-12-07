@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Features - JStock</title>
+<meta name="description" content="JStock makes it easy to track your stock investment. It provides well organized stock market information, to help you decide your best investment strategy." /> 
+<meta name="keywords" content="free stock market software, free stock investment software" /> 
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+
+<link rel="stylesheet" href="javascript_slider/slider.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="shadows/shadows.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<script type="text/javascript" src="javascript_slider/slider.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="shadows/dropshadow.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/jquery.url.packed.js"></script>
+
+<script type="text/javascript">
+<!--
+$(function () {
+    var url = window.location.href;
+    var target;
+    
+    var queryStart = url.indexOf("?") + 1;
+    var queryEnd   = url.indexOf("#") + 1 || url.length + 1;
+    var query      = url.slice(queryStart, queryEnd - 1);
+    
+    if (query === url || query === "")
+    {
+        target = $("#slider #four-header");         
+    }    
+    else
+    {
+        target = $("#slider #" + query);
+    }
+
+    var target2 = target.next().children(":first");
+
+    target.trigger('click');
+    target2.trigger('click');
+});
+//-->
+</script>
+
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">Home</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">Download</a></li>
+    <li>&middot;</li>
+    <li><a class="current_page" href="features.html">Features</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">Indicators</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">Testimonial</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a href="javascript:void(0)"><u>Help</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">Install & Upgrade</a></li>
+            <li><a href="help_real_time_info.html">Stock Watchlist</a></li>
+            <li><a href="help_stock_indicator_editor.html">Stock Indicator Editor</a></li>
+            <li><a href="help_stock_indicator_scanner.html">Stock Indicator Scanner</a></li>
+            <li><a href="help_portfolio_management.html">Portfolio Management</a></li>            
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">FAQ</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">Donation</a></li>              
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </li>  
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/us.png" /><u>English</u></a>
+        <ul>
+            <li><a href="zh/features2.html"><img border="0" src="images/country/cn.png" />中文</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div id="slider">
+  <div onclick="location.href='features.html?one-header';" class="header" id="one-header"><img src="images/features/realtime.png" /><h3>Stock Watchlist</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features.html?two-header';" class="header" id="two-header"><img src="images/features/portfolio.png" /><h3>Portfolio Management</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features.html?three-header';" class="header" id="three-header"><img src="images/features/alert.png" /><h3>Alert</h3><div style="clear:both;"></div></div>
+  
+  <div class="header" id="four-header"><img src="images/features/indicator.png" /><h3>Indicator Filter</h3><div style="clear:both;"></div></div>
+  <div class="content" id="four-content">
+    <div style="cursor: pointer;" class="text" name="feature-indicator-installer">
+      Indicator Installer
+    </div>  
+    <div style="cursor: pointer;" class="text" name="feature-indicator-editor">
+      Indicator Editor
+    </div>
+    <div style="cursor: pointer;" class="text" name="feature-indicator-scanner">
+      Indicator Scanner
+    </div>
+  </div>
+
+  <div class="header" id="five-header"><img src="images/features/chart.png" /><h3>Charting</h3><div style="clear:both;"></div></div>
+  <div class="content" id="five-content">
+    <div style="cursor: pointer;" class="text" name="feature-charting-investment-flow-summary">
+      Investment Flow Summary
+    </div>	  
+    <div style="cursor: pointer;" class="text" name="feature-charting-dividend-summary">
+      Dividend Summary
+    </div>    
+    <div style="cursor: pointer;" class="text" name="feature-charting-portfolio-summary">
+      Portfolio Summary
+    </div>    
+    <div style="cursor: pointer;" class="text" name="feature-charting-history-stock-info">
+      History Stock Info
+    </div> 
+    <div style="cursor: pointer;" class="text" name="feature-charting-history-index-info">
+      History Index Info
+    </div>
+  </div>
+  
+  <div class="header" id="six-header"><img src="images/features/upload_to_cloud.png" /><h3>Cloud Storage</h3><div style="clear:both;"></div></div>
+  <div class="content" id="six-content">
+    <div style="cursor: pointer;" class="text" name="feature-cloud">
+      Cloud Storage
+    </div> 
+  </div> 
+  
+  <div class="header" id="seven-header"><img src="images/features/money.png" /><h3>Currency Exchange</h3><div style="clear:both;"></div></div>
+  <div class="content" id="seven-content">
+    <div style="cursor: pointer;" class="text" name="feature-currency-exchange">
+      Currency Exchange
+    </div> 
+  </div> 
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-43627934-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="eight-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
+  
+    <div style="margin-top:20px" class="news">
+      <p style="margin-bottom:5px">
+      Show your LOVE to JStock!
+      </p>
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+    </div>
+  
+</div>
+
+<div id="features-content">
+	<div class="feature-content" id="feature-indicator-installer" style="display : none"><a rel="lightbox" title="Install pre-built indicators with just a single click" href="images/features/indicators-installer-b.png"><img class="shadow" src="images/features/indicators-installer-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">JStock comes with pre-built technical indicators. It will tell you the <strong>right timing to buy and sell</strong>. Install indicators is easy with just a single button click. Stock investment is always so fun and easy. Visit <a href="ma_indicator.html">Indicators Page</a> to learn more.</div></div>
+    <div class="feature-content" id="feature-indicator-editor" style="display : none"><a rel="lightbox" title="Compose any indicator rules based on your imagination" href="images/features/indicatoreditor-b.png"><img class="shadow" src="images/features/indicatoreditor-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">You may customize the indicators in the way you wish. You do not need to learn any programming in order to build your very own stock filtering rule. JStock comes with an <strong>easy to use drag-and-drop graphics block</strong>.</div></div>
+    <div class="feature-content" id="feature-indicator-scanner" style="display : none"><a rel="lightbox" title="Filter out potential stocks from the entire stock market" href="images/features/indicatorscanner-b.png"><img class="shadow" src="images/features/indicatorscanner-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">Filter out potential stocks from <strong>the entire stock market</strong> using your custom built indicator, in real-time fashion.</div></div>
+    <div class="feature-content" id="feature-charting-dividend-summary" style="display : none"><a rel="lightbox" title="Provide summary on your dividend" href="images/features/dividend-by-year-b.png"><img class="shadow" src="images/features/dividend-by-year-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">Is my dividend earning increased from year to year? Is Microsoft dividend payout decreased from year to year? JStock will help you the <strong>answer all the dividend questions</strong>.</div></div>
+    <div class="feature-content" id="feature-charting-portfolio-summary" style="display : none"><a rel="lightbox" title="Provide summary on your portfolio" href="images/features/charting-portfolio-summary-b.png"><img class="shadow" src="images/features/charting-portfolio-summary-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">Which stock gives me the best return of investment? Which stock has the highest dividend yield? JStock will help you the <strong>answer all the portfolio questions</strong>.</div></div>
+    <div class="feature-content" id="feature-charting-investment-flow-summary" style="display : none"><a rel="lightbox" title="Provide snapshot on your investment flow" href="images/features/investment-flow-b.png"><img class="shadow" src="images/features/investment-flow-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">Want to know how well is your investment skill? Want to know whether your investment return has increased from year to year? <strong>Invesetment flow chart</strong> is the answer.</div></div>    
+    <div class="feature-content" id="feature-charting-history-stock-info" style="display : none"><a rel="lightbox" title="Up to 10 years stock history information" href="images/features/charting-stock-history-b.png"><img class="shadow" src="images/features/charting-stock-history-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">Up to <strong>10 years</strong> stock history information is available.</div></div>
+    <div class="feature-content" id="feature-charting-history-index-info" style="display : none"><a rel="lightbox" title="Up to 10 years index history information" href="images/features/charting-index-history-b.png"><img class="shadow" src="images/features/charting-index-history-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">Up to <strong>10 years</strong> index history information is available.</div></div>
+    <div class="feature-content" id="feature-market-chit-chat" style="display : none"><a rel="lightbox" title="Exchange latest stock market tips with other investors" href="images/features/chat-b.png"><img class="shadow" src="images/features/chat-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">You may <strong>exchange latest stock market tips</strong> with other investors.</div></div>
+    
+    <div class="feature-content" id="feature-cloud" style="display : none"><a rel="lightbox" title="Access your personal JStock data anytime, anywhere" href="images/features/cloud-b.png"><img class="shadow" src="images/features/cloud-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">You may access your personal JStock data <strong>anytime, anywhere</strong>. You upload entire personal JStock data into cloud at home, and open up personal JStock data from cloud at office. <b>The data is stored in your private Google Drive account. No other, but only YOU can access it.</b> Please view our <a href="privacy.html">privacy information</a>. Cloud works best with <a href="https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui">JStock Android</a>.</div></div>
+    
+    <div class="feature-content" id="feature-currency-exchange" style="display : none"><img class="shadow" src="images/features/currency-exchange-s.png"/><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">By using information from currency exchange server, you may show your foreign stocks in <strong>local currency</strong>.</div></div>
+</div>
+
+<script type="text/javascript">
+<!--
+applyDropShadows("img.shadow", "shadow3");
+
+slider.init('slider',0);
+
+$('#one-header').click(function() {
+    location.href='features.html?one-header';
+});
+$('#two-header').click(function() {
+    location.href='features.html?two-header';
+});
+$('#three-header').click(function() {
+    location.href='features.html?three-header';
+});
+$('#eight-header').click(function() {
+    pageTracker._trackPageview('/downloads/android'); 
+    location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
+});
+$('#slider .content .text').bind("click", function (e) {          
+    var me = $(this);
+    var name = me.attr("name");
+    $('#slider .content .text').removeClass('current');
+    $('.feature-content').hide();
+    
+    me.addClass('current');
+    $('.feature-content#' + name).show();          
+});  
+//-->
+</script>
+    
+<div style="clear:both;"></div>
+ 
+<div class="h-container"><h3 style="text-align: right"><a href="download.html">Download JStock - Free Stock Market Software</a></h3></div>
+
+<script type="text/javascript">
+initLightbox();
+</script>
+
+<div class="adv" align="center" style="border-top: 1px solid #E1E1E1;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 3/7/10 */
+google_ad_slot = "0495074961";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<div id="footer">
+Please support by <a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">donating</a> &middot; Content under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

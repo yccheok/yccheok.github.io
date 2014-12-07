@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>帮助：投资组合管理 - JStock</title>
+<meta name="description" content="JStock 让您轻松地处理您的股票投资。她提供了良好的股市讯息，使您作出最佳的投资决策。" /> 
+<meta name="keywords" content="免费股市软件, 免费炒股软件" /> 
+<meta http-equiv="Content-Language" content="zh" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">首页</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">下载</a></li>
+    <li>&middot;</li>
+    <li><a href="features.html">功能</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">指标</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">口碑</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a class="current_page" href="javascript:void(0)"><u>帮助</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">安装及升级</a></li>
+            <li><a href="help_real_time_info.html">股票观察表</a></li>
+            <li><a href="help_stock_indicator_editor.html">股票指标编辑器</a></li>
+            <li><a href="help_stock_indicator_scanner.html">股票指标扫描仪</a></li>
+            <li><a href="help_portfolio_management.html">投资组合管理</a></li>
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">常见问题</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">捐赠</a></li>              
+            <li><a href="contact.html">联络</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/cn.png" /><u>中文</u></a>
+        <ul>
+            <li><a href="../help_portfolio_management.html"><img border="0" src="images/country/us.png" />English</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div class="help-section">
+<div style="float : left">
+<div class="h-container"><h2>投资组合管理</h2></div>
+
+<br />
+
+<div>
+<p><a href="#buy-transaction">如何记录买入交易？</a></p>
+<p><a href="#sell-transaction">如何记录卖出交易？</a></p>
+<p><a href="#received-dividend">如何记录股息？</a></p><br />
+<p><a href="#deposit">如何记录现金存款及提款？</a></p>
+<p><a href="#auto-dividend">可否自动生成股息？</a></p>
+<p><a href="#stock-capital-gain">哪些股票给我的最好的投资回酬？</a></p><br />
+<p><a href="#dividend-payout">哪些股票给我的最好的股息？</a></p>
+<p><a href="#performance-summary">我想知道我目前的投资组合表现的总结。</a></p>
+<p><a href="#performance-over-time">我想随着时间，跟踪我的投资组合的表现。</a></p><br />
+<p><a href="#multiple-portfolios">我可以同时拥有多个投资组合吗？</a></p>
+<p><a href="#split-and-merge">我要如何处理股票分割/股票合并？</a></p>
+<p><a href="#bonus-issues">股票红利呢？</a></p><br />
+<p><a href="#currency-exchange">JStock 可以显示我的外国股票值在本地货币汇率吗？</a></p>
+<p><a href="#record-broker-fee">我想要记录经纪费。</a></p>
+<p><a href="#auto-broker-fee">JStock 可以自动计算我所有的交易吗？</a></p><br />
+<p><a href="#pence-to-pound">英国股价是在便士（仙），但我想要我的投资组合显示在英镑（元）。</a></p><br />
+</div>
+</div>
+
+<div style="float : right" align="right">
+<!-- Advertisement -->
+</div>
+<div style="clear : both"></div>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="buy-transaction">如何记录买入交易？</h3></div>
+<div>
+点击位于"投资组合管理"页面底部的"买入..."图标。&nbsp;<img align="top" src="images/help/buy-icon.png" title="买入图标" alt="买入图标"/>
+</div>
+<br />
+<div>
+买入对话框将被显示。&nbsp;<img align="top" src="images/help/buy-dialog.png" title="买入对话框" alt="买入对话框"/>
+</div>
+<br />
+
+<div class="h-container"><h3 id="sell-transaction">如何记录卖出交易？</h3></div>
+<div>
+首先，从买入投资组合区，选择您想卖出的股票。点击位于"投资组合管理"页面底部的"卖出..."图标。&nbsp;<img align="top" src="images/help/sell-icon.png" title="卖出图标" alt="卖出图标"/>
+</div>
+<br />
+<div>
+卖出对话框将被显示。&nbsp;<img align="top" src="images/help/sell-dialog.png" title="卖出对话框" alt="卖出对话框"/> 
+</div>
+<br />
+
+<div class="h-container"><h3 id="received-dividend">如何记录股息？</h3></div>
+<div>
+点击位于"投资组合管理"页面底部的"股息..."图标。&nbsp;<img align="top" src="images/help/dividend-icon.png" title="股息图标" alt="股息图标"/>
+</div>
+<br />
+<div>
+股息对话框将被显示。&nbsp;<img align="top" src="images/help/dividend-dialog.png" title="股息对话框" alt="股息对话框"/> 
+</div>
+<br />
+
+<div class="h-container"><h3 id="deposit">如何记录现金存款及提款？</h3></div>
+<div>
+点击位于"投资组合管理"页面底部的"现金..."图标。&nbsp;<img align="top" src="images/help/deposit-icon.png" title="现金图标" alt="现金图标"/>
+</div>
+<br />
+<div>
+现金对话框将被显示。&nbsp;<img align="top" src="images/help/deposit-dialog.png" title="现金对话框" alt="现金对话框"/> 
+</div>
+<br />
+
+<div class="h-container"><h3 id="auto-dividend">可否自动生成股息？</h3></div>
+<div>
+启动股息对话框后, 点击<i>自动股息...</i>图标。&nbsp;<img align="top" src="images/help/auto-dividend-icon.png" title="自动股息图标" alt="自动股息图标"/>.
+</div>
+<br />
+<div>
+自动股息对话框将被显示。&nbsp;<img align="top" src="images/help/auto-dividend.png" title="自动股息对话框" alt="自动股息对话框"/> 
+</div>
+<br />
+<div>
+自动生成的股息并非100%精准。您可通过税及税率来进行调整。
+</div>
+<br />
+
+<div class="h-container"><h3 id="stock-capital-gain">哪些股票给我的最好的投资回酬？</h3></div>
+<div>
+用鼠标点击买入或卖出的投资组合区，并选择"摘要..."图标。&nbsp;<img align="top" src="images/help/stock-summary-icon.png" title="摘要图标" alt="摘要图标"/>
+</div>
+<br />
+<div>
+摘要图表将被显示。&nbsp;<img align="top" src="images/help/stock-summary.png" title="摘要图表" alt="摘要图表"/>
+</div>
+<br />
+<div>
+从右下角的下拉列表，您可选择将它们分组为"盈利值"，"盈利 %"，"股息"，...
+</div>
+<br />
+
+<div class="h-container"><h3 id="dividend-payout">哪些股票给我的最好的股息？</h3></div>
+<div>
+用鼠标点击买入或卖出的投资组合区，并选择"股息图表..."图标。&nbsp;<img align="top" src="images/help/dividend-chart-icon.png" title="股息图表图标" alt="股息图表图标"/>
+</div>
+<br />
+<div>
+股息图表将被显示。&nbsp;<img align="top" src="images/help/dividend-payout.png" title="股息图表" alt="股息图表"/>
+</div>
+<br />
+<div>
+从右下角的下拉列表，您可选择查看股息总值。您也可以选择查看个别股票股息。
+</div>
+<br />
+
+<div class="h-container"><h3 id="performance-summary">我想知道我目前的投资组合表现的总结。</h3></div>
+<div>
+请查看"投资组合管理"页面的顶部，它带出四项信息。&nbsp;<img align="top" src="images/help/portfolio-summary.png" title="投资组合表现的总结" alt="投资组合表现的总结"/>
+</div>
+<div class="faq">
+<ul>
+    <li>股票 - 它告诉您，您所拥有的股票的当前市场价值。</li>
+    <li>现金 - 当您购买股票时，现金数额将减少。而当您收到股息，现金数额将增加。</li>
+    <li>纸上盈利 - 您所拥有的股票目前的市场价值，减去它们的购买价值。</li>
+    <li>实现盈利 - 共计您卖出股票的价值，减去他们的购买价值。</li>
+</ul>
+</div>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 336x280, created 10/23/09 */
+google_ad_slot = "8965095522";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="performance-over-time">我想随着时间，跟踪我的投资组合的表现。</h3></div>
+<div>
+JStock 让您随着时间，跟踪您的投资组合的表现。您将会知道您的净值增长何时开始增加或下降。用鼠标点击买入或卖出的投资组合区，并选择"投资图表..."图标。&nbsp;<img align="top" src="images/help/investment-chart-icon.png" title="投资图表图标" alt="投资图表图标"/>
+</div>
+<br />
+<div>
+投资图表将被显示。&nbsp;<img align="top" src="images/help/investment-chart.png" title="投资图表" alt="投资图表"/>
+</div>
+<br />
+<div>
+在投资图表的上角，将显示"总投资额是 $x。总回酬额是 $y。净盈利/损失额是 $z".
+</div>
+<br />
+<div>
+当您移动鼠标在图表上，2个黄色框将告诉您，随着时间的变动，买入和卖出活动的细节。
+</div>
+<br />
+
+<div class="h-container"><h3 id="multiple-portfolios">我可以同时拥有多个投资组合吗？</h3></div>
+<div class="faq">
+<ul>
+    <li>到顶部菜单"投资组合-> 多种投资组合..."，您会看到以下画面。&nbsp;<img align="top" src="images/help/multiple-portfolios.png" title="多种投资组合" alt="多种投资组合"/></li>
+    <li>点击"新建..."，并输入您投资组合的名称。</li>
+    <li>在名单上双击，以选择您目前活跃的投资组合。活跃的投资组合字体将会比较,<b>突出</b>。</li>
+    <li>您也可从顶部菜单的"投资组合"，选择您目前活跃的投资组合。</li>
+</ul>
+</div>
+<br />
+
+<div class="h-container"><h3 id="split-and-merge">我要如何处理股票分割/股票合并？</h3></div>
+<div>
+右键指定股项，选择"分割/合并...".&nbsp;<img align="top" src="images/help/split-merge.png" title="分割或合并" alt="分割或合并"/>
+</div>
+<br />
+
+<div class="h-container"><h3 id="bonus-issues">股票红利呢？</h3></div>
+<div>
+您只需要用0价格买入该股票。
+</div>
+<br />
+
+<div class="h-container"><h3 id="currency-exchange">JStock 可以显示我的外国股票值在本地货币汇率吗？</h3></div>
+<div>
+到"选项-> 选项...-> 财富", 在"货币 (测试版)"，您可以选择本地货币。货币汇率将会显示在状态栏右下角.&nbsp;<img align="top" src="images/help/currency-exchange.png" title="货币汇率" alt="货币汇率"/>
+<br />
+（这是一项新功能。您有任何意见，可通过<a href="http://sourceforge.net/projects/jstock/forums/forum/723854">论坛</a>让我们知道及改进）
+</div>
+<br />
+
+<div class="h-container"><h3 id="record-broker-fee">我想要记录经纪费。</h3></div>
+<div>
+您可通过"选项-> 选项...-> 财富"启动这项功能。<br/><img align="top" src="images/help/enable-broker.png" title="启动经纪费" alt="启动经纪费"/>
+</div>
+<br />
+
+<div class="h-container"><h3 id="auto-broker-fee">JStock 可以自动计算我所有的交易吗？</h3></div>
+<div>
+是的。JStock 可以对您的所有交易记录进行自动计算。举个例子，以下显示如何计算马来西亚的交易成本。
+</div>
+<br />
+<div>
+我使用的马来西亚经公司为 <i>OSK Broking Firm</i>。因此，我到顶部菜单选择"选项-> 选项...-> 经纪费"，并提供以下资料。
+</div>
+<div class="faq">
+<ul>
+    <li>在"自动计算经纪费，印花税和结算费"上打勾</li>
+    <li>点击"添加..."</li>
+    <li>输入经纪公司的名称，然后点击"确定"&nbsp;<img align="top" src="images/help/choose-broking-firm.png" title="Broking Firm Name" alt="Broking Firm Name"/></li>
+</ul>
+</div>
+
+<br />
+<div>
+<i>OSK Broking Firm</i> 提供以下的收费率
+</div>
+<div class="faq">
+<ul>
+    <li>经纪费收费率 - 合同总价值的 0.42%</li>
+    <li>最低经纪费 - $28.00</li>
+    <li>最高经纪费 - $1,000.00</li>
+    <li>举个例子，我买的股票总价值是 $1,000.00。我需要付的经纪费是 [ $28.00, 0.42% x $1,000 = $4.20 ] = $28.00。&nbsp;<img src="images/help/broker-fee.png" align="top" title="经纪费" alt="经纪费"/></li>
+</ul>
+</div>
+
+<br />
+<div>
+以下是如何计算印花税
+</div>
+<div class="faq">
+<ul>
+    <li>每一个合同价值的$1000.00会被抽$1印花税。</li>
+    <li>最高印花税 - $200.00</li>
+    <li>举个例子，我买的股票总价值是 $2,100.00。我需要付的印花税是 $1.00 + $1.00 + $1.00 = $3.00&nbsp;<img src="images/help/stamp-duty.png" align="top" title="印花税" alt="印花税"/></li>
+</ul>
+</div>
+
+<br />
+<div>
+以下是如何计算结算费
+</div>
+<div class="faq">
+<ul>
+    <li>结算费收费率 - 合同总价值的 0.03%</li>
+    <li>最高结算费 - $1,000.00</li>
+    <li>举个例子，我买的股票总价值是 $1,000.00。 我需要付的结算费是 0.03% x $1,000.00 = $0.30&nbsp;<img src="images/help/clearing-fee.png" align="top" title="结算费" alt="结算费"/></li>
+</ul>
+</div>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 336x280, created 10/23/09 */
+google_ad_slot = "8965095522";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<br />
+
+<div class="h-container"><h3 id="pence-to-pound">英国股价是在便士（仙），但我想要我的投资组合显示在英镑（元）。</h3></div>
+<div>
+到"选项-> 选项...-> 财富"。勾选上"用便士（仙）作为展现股票价格单位，英镑（元）作为股票价值单位"。<br/><img align="top" src="images/help/show-stock-value-in-pound.png" title="Show stock value in pound" alt="Show stock value in pound"/><br />有几个事项需要留意的。
+</div>
+<div class="faq">
+<ul>
+    <li>当您输入买/卖记录，买卖价格是在便士（仙）。</li>
+    <li>当您输入买/卖记录，经纪费、结算费或印花税是在便士（仙）。</li>
+    <li>显示价值是在英镑（元）。</li>
+</ul>
+</div>
+
+<br />
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-43627934-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<div id="footer">
+请支持<a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">捐赠</a> &middot; 内容许可证 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a> &middot; <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=108599022497670" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

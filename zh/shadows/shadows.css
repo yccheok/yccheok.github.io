@@ -1,0 +1,64 @@
+/*
+CSS from:
+http://www.alistapart.com/articles/onionskin/
+modified to use descendant selectors instead of class names,
+as suggested by Sergio: http://www.alistapart.com/discuss/onionskin/3/#c8219
+Updated to allow for multiple shadow styles throughout the site
+*/
+
+div.shadow1, div.shadow1 div, div.shadow1 div div {
+	display:inline-table;
+	/* \*/display:block;/**/
+	}
+div.shadow1 {
+	float:left;
+	background:url(images/shadows/01/shadow.gif) right bottom no-repeat;
+	}
+div.shadow1 div {
+	background:url(images/shadows/01/corner_bl.gif) -16px 100% no-repeat;
+	}
+div.shadow1 div div {
+	padding:0 8px 8px 0;
+	background:url(images/shadows/01/corner_tr.gif) 100% -16px no-repeat;
+	}
+div.shadow1 div div img {
+	display:block;
+	}
+	
+div.shadow2, div.shadow2 div, div.shadow2 div div {
+	display:inline-table;
+	/* \*/display:block;/**/
+	}
+div.shadow2 {
+	float:left;
+	background:url(images/shadows/02/shadow.gif) right bottom no-repeat;
+	}
+div.shadow2 div {
+	background:url(images/shadows/02/corner_bl.gif) -16px 100% no-repeat;
+	}
+div.shadow2 div div {
+	padding:0 8px 8px 0;
+	background:url(images/shadows/02/corner_tr.gif) 100% -16px no-repeat;
+	}
+div.shadow2 div div img {
+	display:block;
+	}
+	
+div.shadow3, div.shadow3 div, div.shadow3 div div {
+	display:inline-table;
+	/* \*/display:block;/**/
+	}
+div.shadow3 {
+	float:left;
+	background:url(images/shadows/03/shadow.gif) right bottom no-repeat;
+	}
+div.shadow3 div {
+	background:url(images/shadows/03/corner_bl.gif) -16px 100% no-repeat;
+	}
+div.shadow3 div div {
+	padding:0 8px 8px 0;
+	background:url(images/shadows/03/corner_tr.gif) 100% -16px no-repeat;
+	}
+div.shadow3 div div img {
+	display:block;
+	}

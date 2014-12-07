@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Help : Install & Upgrade - JStock</title>
+<meta name="description" content="JStock makes it easy to track your stock investment. It provides well organized stock market information, to help you decide your best investment strategy." /> 
+<meta name="keywords" content="free stock market software, free stock investment software" /> 
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">Home</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">Download</a></li>
+    <li>&middot;</li>
+    <li><a href="features.html">Features</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">Indicators</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">Testimonial</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a class="current_page" href="javascript:void(0)"><u>Help</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">Install & Upgrade</a></li>
+            <li><a href="help_real_time_info.html">Stock Watchlist</a></li>
+            <li><a href="help_stock_indicator_editor.html">Stock Indicator Editor</a></li>
+            <li><a href="help_stock_indicator_scanner.html">Stock Indicator Scanner</a></li>
+            <li><a href="help_portfolio_management.html">Portfolio Management</a></li>
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">FAQ</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">Donation</a></li>              
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </li> 
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/us.png" /><u>English</u></a>
+        <ul>
+            <li><a href="zh/help_install_upgrade.html"><img border="0" src="images/country/cn.png" />中文</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div class="help-section">
+<div style="float : left">
+<div class="h-container"><h2>Installation & Upgrade</h2></div>
+
+<br />
+
+<div>
+<p><a href="#install-windows">How to install JStock in Windows?</a></p>
+<p><a href="#install-linux">How to install JStock in Linux?</a></p>
+<p><a href="#install-mac">How to install JStock in Mac?</a></p><br />
+<p><a href="#upgrade-windows">How to upgrade latest JStock in Windows?</a></p>
+<p><a href="#upgrade-linux">How to upgrade latest JStock in Linux?</a></p>
+<p><a href="#upgrade-mac">How to upgrade latest JStock in Mac?</a></p><br />
+<p><a href="#remove-windows">How to remove JStock from Windows?</a></p>
+<p><a href="#remove-linux">How to remove JStock from Linux?</a></p>
+<p><a href="#remove-mac">How to remove JStock from Mac?</a></p><br />
+</div>
+</div>
+
+<div style="float : right" align="right">
+<!-- Advertisement -->
+</div>
+<div style="clear : both"></div>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="install-windows">How to install JStock in Windows?</h3></div>
+<div class="faq">
+    <ul>
+    <li>Go to <a href="download.html">Download</a>, and click on Windows icon.&nbsp;<img align="top" src="images/windows.png" title="Windows Icon" alt="Windows Icon"/></li>
+    <li>Download and save the installer to your desktop. After downloading, there will be an icon at your desktop.&nbsp;<img align="top" src="images/help/installer.png" title="JStock Installer" alt="JStock Installer"/></li>     
+    <li>Double click on the installer. The following screen will be displayed. Click <i>"I Agree"</i> if you agree with <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License#Version_2">GNU General Public License, Version 2</a>.&nbsp;<img align="top" src="images/help/installer-screen0.png" title="JStock Installer Page 0" alt="JStock Installer Page 0"/></li> 
+    <li>Screen with default suggested directory <i>C:\Program Files\JStock</i> will be displayed. You need not to change the suggested directory. It works most of the time. Just click <i>"Install"</i>.&nbsp;<img align="top" src="images/help/installer-screen1.png" title="JStock Installer Page 1" alt="JStock Installer Page 1"/></li> 
+    <li>Installation will begin. When installation finishes, the following screen will be displayed. Click on <i>"Close"</i>.&nbsp;<img align="top" src="images/help/installer-screen2.png" title="JStock Installer Page 2" alt="JStock Installer Page 2"/></li> 
+    <li>Go to <i>Start Menu-> All Programs-> JStock-> JStock</i> to launch JStock application.</li>    
+    </ul>
+</div>
+
+<div class="h-container"><h3 id="install-linux">How to install JStock in Linux?</h3></div>
+<div class="linux-command">
+    <div>user@ubuntu804desktop:~$ cd ~</div>
+    <div style="text-align:left">user@ubuntu804desktop:~$ wget https://github.com/yccheok/jstock/releases/download/release_1-0-7r/jstock-1.0.7r-bin.zip</div>
+    <div>user@ubuntu804desktop:~$ unzip jstock-1.0.7r-bin.zip</div>
+    <div>user@ubuntu804desktop:~$ cd jstock/</div>
+    <div>user@ubuntu804desktop:~/jstock$ chmod 755 jstock.sh</div>
+    <div>user@ubuntu804desktop:~/jstock$ ./jstock.sh</div>    
+</div>
+<br />
+If you are getting error message &quot;<i>Warning: /bin/java does not exist</i>&quot;, you need to install Java in your Linux. For example, here is <a href="http://www.google.com/search?q=Install+Java+In+Ubuntu">Install Java In Ubuntu</a> Google search result.
+<br />
+<br />
+
+<div class="h-container"><h3 id="install-mac">How to install JStock in Mac?</h3></div>
+<div>
+As I do not have a Mac machine, I have no idea how the installation shall be done on Mac. I will be very happy, if you can contribute to this help section. Drop me an email&nbsp;<img align="absbottom" src="images/email.png" title="Email" alt="Email">. Thank you.
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="upgrade-windows">How to upgrade latest JStock in Windows?</h3></div>
+<div>
+Unless being stated explicitly through the Yellow Announcement Box under <a href="download.html">Download</a>, JStock is designed to be backward compatible. Your previous personal data will remain unchanged after upgrading. Just follow the <a href="#install-windows">Windows Installation Steps</a> to upgrade. There isn't any need to perform uninstall.
+</div>
+<br />
+<div>
+If you want to backup before upgrade, we highly encourage you to make use of <a href="features2.html?six-header">Cloud Storage</a>. However, if you feel uncomfortable to store personal data in servers provided by Google, here is another alternative. You may copy the following entire folder to your thumb drive (or any other storage device).
+
+<div class="faq">
+    <ul>
+    <li>Windows XP - C:\Documents and Settings\{Your Name}\.jstock\</li>        
+    <li>Windows Vista - C:\Users\{Your Name}\.jstock\</li>   
+    </ul>
+</div>
+
+In case you need to restore your personal data, just copy your backup files back to the above mentioned location.
+
+</div>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 336x280, created 10/23/09 */
+google_ad_slot = "8965095522";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="upgrade-linux">How to upgrade latest JStock in Linux?</h3></div>
+
+<div>
+Unless being stated explicitly through the Yellow Announcement Box under <a href="download.html">Download</a>, JStock is designed to be backward compatible. Your previous personal data will remain unchanged after upgrading. Just follow the <a href="#install-linux">Linux Installation Steps</a> to upgrade. There isn't any need to perform uninstall.
+</div>
+<br />
+<div>
+If you want to backup before upgrade, we highly encourage you to make use of <a href="features2.html?six-header">Cloud Storage</a>. However, if you feel uncomfortable to store personal data in servers provided by Google, here is another alternative. You may copy the following entire folder to your thumb drive (or any other storage device).
+
+<div class="faq">
+    <ul>
+    <li>Linux - ~/.jstock/</li>
+    </ul>
+</div>
+In case you need to restore your personal data, just copy your backup files back to the above mentioned location.
+</div>
+<br />
+
+<div class="h-container"><h3 id="upgrade-mac">How to upgrade latest JStock in Mac?</h3></div>
+<div>
+As I do not have a Mac machine, I have no idea how the upgrading shall be done on Mac. I will be very happy, if you can contribute to this help section. Drop me an email&nbsp;<img align="absbottom" src="images/email.png" title="Email" alt="Email">. Thank you.
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="remove-windows">How to remove JStock from Windows?</h3></div>
+<div>
+Go to <i>Start Menu-> All Programs-> JStock-> Uninstall JStock</i> to remove JStock from Windows.
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="remove-linux">How to remove JStock from Linux?</h3></div>
+<div class="linux-command">
+    <div>user@ubuntu804desktop:~$ cd ~</div>
+    <div>user@ubuntu804desktop:~$ rm -r jstock/</div>
+    <div>user@ubuntu804desktop:~$ rm -r .jstock/</div> 
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="remove-mac">How to remove JStock from Mac?</h3></div>
+<div>
+As I do not have a Mac machine, I have no idea how to remove JStock from Mac. I will be very happy, if you can contribute to this help section. Drop me an email&nbsp;<img align="absbottom" src="images/email.png" title="Email" alt="Email">. Thank you.
+</div>
+
+<br />
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-43627934-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<div id="footer">
+Please support by <a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">donating</a> &middot; Content under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a> &middot; <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=108599022497670" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

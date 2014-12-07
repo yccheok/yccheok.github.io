@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>功能 - JStock</title>
+<meta name="description" content="JStock 让您轻松地处理您的股票投资。她提供了良好的股市讯息，使您作出最佳的投资决策。" /> 
+<meta name="keywords" content="免费股市软件, 免费炒股软件" /> 
+<meta http-equiv="Content-Language" content="zh" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+
+<link rel="stylesheet" href="javascript_slider/slider.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="shadows/shadows.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<script type="text/javascript" src="javascript_slider/slider.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="shadows/dropshadow.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/jquery.url.packed.js"></script>
+
+<script type="text/javascript">
+<!--
+$(function () {
+    var url = window.location.href;
+    var target;
+    
+    var queryStart = url.indexOf("?") + 1;
+    var queryEnd   = url.indexOf("#") + 1 || url.length + 1;
+    var query      = url.slice(queryStart, queryEnd - 1);
+    
+    if (query === url || query === "")
+    {
+        target = $("#slider #four-header");         
+    }    
+    else
+    {
+        target = $("#slider #" + query);
+    }
+
+    var target2 = target.next().children(":first");
+
+    target.trigger('click');
+    target2.trigger('click');
+});
+//-->
+</script>
+
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">首页</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">下载</a></li>
+    <li>&middot;</li>
+    <li><a class="current_page" href="features.html">功能</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">指标</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">口碑</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a href="javascript:void(0)"><u>帮助</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">安装及升级</a></li>
+            <li><a href="help_real_time_info.html">股票观察表</a></li>
+            <li><a href="help_stock_indicator_editor.html">股票指标编辑器</a></li>
+            <li><a href="help_stock_indicator_scanner.html">股票指标扫描仪</a></li>
+            <li><a href="help_portfolio_management.html">投资组合管理</a></li>
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">常见问题</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">捐赠</a></li>              
+            <li><a href="contact.html">联络</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/cn.png" /><u>中文</u></a>
+        <ul>
+            <li><a href="../features2.html"><img border="0" src="images/country/us.png" />English</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div id="slider">
+  <div onclick="location.href='features.html?one-header';" class="header" id="one-header"><img src="images/features/realtime.png" /><h3>股票观察表</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features.html?two-header';" class="header" id="two-header"><img src="images/features/portfolio.png" /><h3>投资组合管理</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features.html?three-header';" class="header" id="three-header"><img src="images/features/alert.png" /><h3>警报</h3><div style="clear:both;"></div></div>
+  
+  <div class="header" id="four-header"><img src="images/features/indicator.png" /><h3>指标过滤</h3><div style="clear:both;"></div></div>
+  <div class="content" id="four-content">
+    <div style="cursor: pointer;" class="text" name="feature-indicator-installer">
+      指标安装
+    </div>  
+    <div style="cursor: pointer;" class="text" name="feature-indicator-editor">
+      指标编辑器
+    </div>
+    <div style="cursor: pointer;" class="text" name="feature-indicator-scanner">
+      指标扫描仪
+    </div>
+  </div>
+
+  <div class="header" id="five-header"><img src="images/features/chart.png" /><h3>图表</h3><div style="clear:both;"></div></div>
+  <div class="content" id="five-content">
+    <div style="cursor: pointer;" class="text" name="feature-charting-investment-flow-summary">
+      投资流程摘要
+    </div>	  
+    <div style="cursor: pointer;" class="text" name="feature-charting-dividend-summary">
+      股息摘要
+    </div>    
+    <div style="cursor: pointer;" class="text" name="feature-charting-portfolio-summary">
+      组合摘要
+    </div>    
+    <div style="cursor: pointer;" class="text" name="feature-charting-history-stock-info">
+      股票历史讯息
+    </div> 
+    <div style="cursor: pointer;" class="text" name="feature-charting-history-index-info">
+      指数历史讯息
+    </div>
+  </div>
+  
+  <div class="header" id="six-header"><img src="images/features/upload_to_cloud.png" /><h3>云储存</h3><div style="clear:both;"></div></div>
+  <div class="content" id="six-content">
+    <div style="cursor: pointer;" class="text" name="feature-cloud">
+      云储存
+    </div> 
+  </div>
+  
+  <div class="header" id="seven-header"><img src="images/features/money.png" /><h3>货币交换</h3><div style="clear:both;"></div></div>
+  <div class="content" id="seven-content">
+    <div style="cursor: pointer;" class="text" name="feature-currency-exchange">
+      货币交换
+    </div> 
+  </div> 
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-43627934-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="eight-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
+  
+    <div style="margin-top:20px" class="news">
+      <p style="margin-bottom:5px">
+      Show your LOVE to JStock!
+      </p>
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+    </div>
+  
+</div>
+
+<div id="features-content">
+	<div class="feature-content" id="feature-indicator-installer" style="display : none"><a rel="lightbox" title="安装指标只需一个按钮这么简单" href="images/features/indicators-installer-b.png"><img class="shadow" src="images/features/indicators-installer-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">JStock 配备了预建的技术指标。她会告诉您<strong>正确的买入及卖出时机</strong>。安装指标只需一个按钮这么简单。股票投资永远都是那么的简单有趣。游览<a href="ma_indicator.html">指标网页</a>以吸取更多资讯。</div></div>
+    <div class="feature-content" id="feature-indicator-editor" style="display : none"><a rel="lightbox" title="根据您的想象力编辑任何指标" href="images/features/indicatoreditor-b.png"><img class="shadow" src="images/features/indicatoreditor-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">您可根据您的喜好自创指标。在不需要学习计算机编程之下，把你的指标规则轻松地编辑出来。这是因为 JStock 备有<strong>简易使用的拖放和拖放图形块</strong>。</div></div>
+    <div class="feature-content" id="feature-indicator-scanner" style="display : none"><a rel="lightbox" title="把有潜能的股票从整个股市过滤出来" href="images/features/indicatorscanner-b.png"><img class="shadow" src="images/features/indicatorscanner-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">用您自创的指标，把有潜能的股票从<strong>整个股市</strong>即时过滤出来。</div></div>
+    <div class="feature-content" id="feature-charting-dividend-summary" style="display : none"><a rel="lightbox" title="提供您的股息摘要" href="images/features/dividend-by-year-b.png"><img class="shadow" src="images/features/dividend-by-year-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">我的股息有逐年增加吗？工商银行的股息是不是逐年减少？JStock 可以帮您<strong>解开所有股息的疑问</strong>。</div></div>
+    <div class="feature-content" id="feature-charting-portfolio-summary" style="display : none"><a rel="lightbox" title="提供您的组合摘要" href="images/features/charting-portfolio-summary-b.png"><img class="shadow" src="images/features/charting-portfolio-summary-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">哪个股票给我最好的回酬？哪个股票的周息率是最高的？JStock 可以帮您<strong>解开所有投资组合的疑问</strong>。</div></div>
+    <div class="feature-content" id="feature-charting-investment-flow-summary" style="display : none"><a rel="lightbox" title="提供您的投资流程摘要" href="images/features/investment-flow-b.png"><img class="shadow" src="images/features/investment-flow-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">要知道您的投资功力多深厚吗？要知道您的投资回酬是不是逐年增加？<strong>投资流程摘要</strong>可以帮您逐一解答。</div></div>    
+    <div class="feature-content" id="feature-charting-history-stock-info" style="display : none"><a rel="lightbox" title="长达10年股票历史讯息" href="images/features/charting-stock-history-b.png"><img class="shadow" src="images/features/charting-stock-history-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">长达<strong>10年</strong>股票历史讯息。</div></div>
+    <div class="feature-content" id="feature-charting-history-index-info" style="display : none"><a rel="lightbox" title="长达10年指数历史讯息" href="images/features/charting-index-history-b.png"><img class="shadow" src="images/features/charting-index-history-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">长达<strong>10年</strong>指数历史讯息。</div></div>
+    <div class="feature-content" id="feature-market-chit-chat" style="display : none"><a rel="lightbox" title="和其他投资者交换最新的市场消息" href="images/features/chat-b.png"><img class="shadow" src="images/features/chat-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">您可和其他投资者<strong>交换最新的市场消息</strong>。</div></div>
+    <div class="feature-content" id="feature-cloud" style="display : none"><a rel="lightbox" title="任何时候，任何地点读取个人资料" href="images/features/cloud-b.png"><img class="shadow" src="images/features/cloud-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">您可以在<strong>任何时候，任何地点</strong>读取您 JStock 个人资料。您可在家中把 JStock 个人资料上传去云端，然后在办公室从云端开启个人资料。<b>资料是储存在您私人 Google Drive 帐户。没人能读取您的资料。除了您本身。</b>请查阅我们的<a href="privacy.html">隐私信息</a>。云储存是 <a href="https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui">JStock Android</a> 最佳拍档。</div></div>
+    <div class="feature-content" id="feature-currency-exchange" style="display : none"><img class="shadow" src="images/features/currency-exchange-s.png"/><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">通过使用货币交换服务器的信息，您可以用<strong>本地汇率</strong>显示您的外国股票。</div></div>
+</div>
+
+<script type="text/javascript">
+<!--
+applyDropShadows("img.shadow", "shadow3");
+
+slider.init('slider',0);
+
+$('#one-header').click(function() {
+    location.href='features.html?one-header';
+});
+$('#two-header').click(function() {
+    location.href='features.html?two-header';
+});
+$('#three-header').click(function() {
+    location.href='features.html?three-header';
+});
+$('#eight-header').click(function() {
+    pageTracker._trackPageview('/downloads/android'); 
+    location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
+});
+$('#slider .content .text').bind("click", function (e) {          
+    var me = $(this);
+    var name = me.attr("name");
+    $('#slider .content .text').removeClass('current');
+    $('.feature-content').hide();
+    
+    me.addClass('current');
+    $('.feature-content#' + name).show();          
+});  
+//-->
+</script>
+    
+<div style="clear:both;"></div>
+ 
+<div class="h-container"><h3 style="text-align: right"><a href="download.html">Download JStock - Free Stock Market Software</a></h3></div>
+
+<script type="text/javascript">
+initLightbox();
+</script>
+
+<div class="adv" align="center" style="border-top: 1px solid #E1E1E1;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 3/7/10 */
+google_ad_slot = "0495074961";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<div id="footer">
+请支持<a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">捐赠</a> &middot; 内容许可证 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

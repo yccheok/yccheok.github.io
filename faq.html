@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.url.packed.js"></script>
+<script type="text/javascript">
+<!--
+$(function () {
+var anchor = jQuery.url.attr("anchor");
+var utm_source = jQuery.url.param("utm_source");
+var utm_medium = jQuery.url.param("utm_medium");
+
+if (!anchor) {
+    if (utm_source && utm_medium) {
+        location.href='help.html?utm_source=' + utm_source + '&utm_medium=' + utm_medium;
+    }
+    else {
+        location.href='help.html';
+    }
+}
+else if (anchor.search(/sms/i) != -1) {
+    if (utm_source && utm_medium) {
+        location.href='help_real_time_info.html?utm_source=' + utm_source + '&utm_medium=' + utm_medium + '#sms-alert';
+    }
+    else {
+        location.href='help_real_time_info.html#sms-alert';
+    }
+}
+else if (anchor.search(/database/i) != -1) {
+    if (utm_source && utm_medium) {
+        location.href='help_real_time_info.html?utm_source=' + utm_source + '&utm_medium=' + utm_medium + '#new-database';
+    }
+    else {
+        location.href='help_real_time_info.html#new-database';
+    }
+}
+else {
+    if (utm_source && utm_medium) {
+        location.href='help.html?utm_source=' + utm_source + '&utm_medium=' + utm_medium;
+    }
+    else {
+        location.href='help.html';
+    }
+}
+});
+-->
+</script>
+</head>
+<body>
+</body>
+</html>

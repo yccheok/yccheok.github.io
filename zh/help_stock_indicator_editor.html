@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>帮助:股票指标编辑器 - JStock</title>
+<meta name="description" content="JStock 让您轻松地处理您的股票投资。她提供了良好的股市讯息，使您作出最佳的投资决策。" /> 
+<meta name="keywords" content="免费股市软件, 免费炒股软件" /> 
+<meta http-equiv="Content-Language" content="zh" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-store, no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<div id="top"></div>
+
+<div id="content">
+
+<div class="banner">
+</div>
+
+<div class="breadcrumbs">
+<ul id="jsddm">
+    <li><a href="index.html">首页</a></li>
+    <li>&middot;</li>
+    <li><a href="download.html">下载</a></li>
+    <li>&middot;</li>
+    <li><a href="features.html">功能</a></li>
+    <li>&middot;</li>  
+    <li><a href="ma_indicator.html">指标</a></li>
+    <li>&middot;</li>  
+    <li><a href="testimonial.html">口碑</a></li>
+    <li>&middot;</li> 
+    <li id="help-menu"><a class="current_page" href="javascript:void(0)"><u>帮助</u><small>▼</small></a>
+        <ul>
+            <li><a href="help_install_upgrade.html">安装及升级</a></li>
+            <li><a href="help_real_time_info.html">股票观察表</a></li>
+            <li><a href="help_stock_indicator_editor.html">股票指标编辑器</a></li>
+            <li><a href="help_stock_indicator_scanner.html">股票指标扫描仪</a></li>
+            <li><a href="help_portfolio_management.html">投资组合管理</a></li>      
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="help_faq.html">常见问题</a></li>          
+            <li><div class="jsddm-seperator"></div></li>
+            <li><a href="donation.html">捐赠</a></li>              
+            <li><a href="contact.html">联络</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </li>
+</ul>
+<div class="right-menu">
+<ul id="jsddm2">
+    <li id="country-menu"><a href="javascript:void(0)"><img border="0" src="images/country/cn.png" /><u>中文</u></a>
+        <ul>
+            <li><a href="../help_stock_indicator_editor.html"><img border="0" src="images/country/us.png" />English</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+var ddmenuitem = 0;
+var ddmenuitem2 = 0;
+function jsddm_open(evt) {
+    ddmenuitem = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_open2(evt) {
+    ddmenuitem2 = $(this).find('ul').eq(0).toggle();
+}
+function jsddm_close(evt) {
+    var target = $(evt.target);    
+    
+    if (target.parents('#jsddm > li#help-menu').length <= 0) {
+        if (ddmenuitem) ddmenuitem.hide();
+    }
+    if (target.parents('#jsddm2 > li#country-menu').length <= 0) {
+        if (ddmenuitem2) ddmenuitem2.hide();
+    }
+}
+$('#jsddm > li').bind('click', jsddm_open);
+$('#jsddm2 > li').bind('click', jsddm_open2);
+$(document).bind('click', jsddm_close);
+-->
+</script>
+
+<div class="middle">
+
+<div class="adv" align="left">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 468x60, created 10/10/09 */
+google_ad_slot = "6678011157";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<div class="help-section">
+<div style="float : left">
+<div class="h-container"><h2>股票指标编辑器</h2></div>
+
+<br />
+
+<div>
+<p><a href="#get-start">如何开始使用股票指标编辑器？</a></p>
+<p><a href="#indicator-function">JStock 提供什么的功能，以让我创建自己的指标呢？</a></p>
+<p><a href="#indicator-example">如何建立指标？</a></p><br />
+<p><a href="#share-indicator">如何与朋友分享我的指标？</a></p>
+<p><a href="#skip-n-days">我要如何建立"N 天前的十四天平均走势"？</a></p>
+<p><a href="#macd">我想要进行"指数平滑异同移动平均线"（MACD）扫描。</a></p><br />
+</div>
+</div>
+
+<div style="float : right" align="right">
+<!-- Advertisement -->
+</div>
+<div style="clear : both"></div>
+</div>
+
+<br />
+
+<div class="h-container"><h3 id="get-start">如何开始使用股票指标编辑器？</h3></div>
+<div class="faq">
+    <ul>
+    <li>最好的办法开始使用"股票指标编辑器"，是通过我们的预建指标。通过点击"安装"，您就可以安装预建的指标。&nbsp;<img align="top" src="images/help/install.png" title="安装" alt="安装"/></li>
+    <li>选择"从 JStock 服务器安装"， 然后单击"下一步"。&nbsp;<img align="top" src="images/help/install-indicator-page0.png" title="安装指标页0" alt="安装指标页0"/></li>
+    <li>选择你想安装的指标，并点击"下一步"。 我们强烈建议您选择所有指标。&nbsp;<img align="top" src="images/help/install-indicator-page1.png" title="安装指标页1" alt="安装指标页1"/></li>
+    <li>点击"完成"。&nbsp;<img align="top" src="images/help/install-indicator-page2.png" title="安装指标页2" alt="安装指标页2"/></li>     
+    <li>你可以测试指标，通过输入一个股票，然后按"模拟"。&nbsp;<img align="top" src="images/help/simulate-indicator.png" title="模拟指标" alt="模拟指标"/></li>    
+    </ul>
+</div>
+
+<br />
+<div class="h-container"><h3 id="indicator-function">JStock 提供什么组件，以让我创建自己的指标？</h3></div>
+<div>
+您可访问工具栏上的指标组件。&nbsp;<img align="top" src="images/help/stock-indicator-editor-toolbar.png" title="指标编辑工具栏" alt="指标编辑工具栏"/>
+</div>
+<div>
+以下一一列出该组件的功能。
+</div>
+<table id="indicator_table">
+    <tr><td width="100">组件</td><td width="100">图标</td><td width="600">描述</td></tr>
+
+    <tr>
+    <td>警报</td>
+    <td><img src="images/help/bell.png"/></td>
+    <td>每一个由您创建的指标，它必须至少由一个警报组件组成。</td>
+    </tr>
+
+    <tr>
+    <td>即时股票讯息</td>
+    <td><img src="images/help/bookmark.png"/></td>
+    <td>这是今天的实时股票信息。您可以选择 Open Price, Last Price, High Price, Low Price, Typical Price ([High + Low + Last Price] / 3), Volume, Change Price, Change Price in Percentage, Last Volume, 1st/2nd/3rd Buy Price, 1st/2nd/3rd Buy Quantity, 1st/2nd/3rd Sell Price, 1st/2nd/3rd Sell Quantity.</td>
+    </tr>
+
+    <tr>
+    <td>股票历史讯息</td>
+    <td><img src="images/help/bookmarks_list_add2.png"/></td>
+    <td>您可以指定特定日期的股票历史讯息。For example, you may specific average stock last price information from 14th June 2005 to 16th December 2006。您可选择 Maximum, Minimum, Average (Simple Moving Average), Mean Deviation, MACD, RSI (Relative Strength Index), EMA (Exponential Moving Average)。您也可以选择 Open Price, Last Price, High Price, Low Price, Typical Price ([High + Low + Last Price] / 3), and Volume.</td>
+    </tr>
+
+    <tr>
+    <td>股票相对历史讯息</td>
+    <td><img src="images/help/bookmarks_list_add.png"/></td>
+    <td>您可以指定特定日期的股票相对历史讯息。For example, you may specific average stock last 14 days price information. You may either choose Maximum, Minimum, Average (Simple Moving Average), Mean Deviation, MACD, RSI (Relative Strength Index), EMA (Exponential Moving Average). You may also choose Open Price, Last Price, High Price, Low Price, Typical Price ([High + Low + Last Price] / 3), and Volume.</td>
+    </tr>
+
+    <tr>
+    <td>常数</td>
+    <td><img src="images/help/constant.png"/></td>
+    <td>你可以指定任何常数。例如1，10，200，-5。</td>
+    </tr>
+
+    <tr>
+    <td>算术</td>
+    <td><img src="images/help/math.png"/></td>
+    <td>您可执行的算术运算，包括：加/减/乘/除法。</td>
+    </tr>
+
+    <tr>
+    <td>函数</td>
+    <td><img src="images/help/function.png"/></td>
+    <td>您可执行的函数，包括：绝对/平方。</td>
+    </tr>
+    
+    <tr>
+    <td>平等</td>
+    <td><img src="images/help/compare.png"/></td>
+    <td>您可执行平等/比较运算。这包括：平等/大于/小比/等于或大于/等于或小于。</td>
+    </tr>
+
+    <tr>
+    <td>逻辑运算</td>
+    <td><img src="images/help/logical.png"/></td>
+    <td>您可执行下列的逻辑操作。它们包括：OR/ AND。例如，你想要执行
+    <br />"When today price is lesser than yesterday price OR today volume is lesser than yesterday volume"
+    <br />"When today price is lesser than yesterday price AND today volume is lesser than yesterday volume"
+    </td>
+    </tr>
+</table>
+<br />
+
+<div class="h-container"><h3 id="indicator-example">如何建立指标？</h3></div>
+<div>
+下面是一个例子，向您展示如何构建一个简单的指标， 找出股票“的收盘价是在14天最高”。　First, we will draft out our equation to Real Time Stock's Last Price >= Maximum from 14 days Stock's Last Price From the equation，我们需要以下组件：
+</div>
+<div class="faq">
+    <ul>
+    <li>即时股票讯息&nbsp;<img src="images/help/bookmark.png"/></li> 
+    <li>股票相对历史讯息&nbsp;<img src="images/help/bookmarks_list_add.png"/></li> 
+    <li>平等&nbsp;<img src="images/help/compare.png"/></li> 
+    <li>警报&nbsp;<img src="images/help/bell.png"/></li> 
+    </ul>
+</div>
+<br />
+<div class="sms_alert">
+    <div class="thumbnail">
+        <a rel="lightbox" title="把四个组件置放在绘图区域" href="images/indicator-editor/0.png"><img height="75" width="120" src="images/indicator-editor/0s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="把四个组件置放在绘图区域" href="images/indicator-editor/0.png">放置</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="把四个组件连接起来" href="images/indicator-editor/1.png"><img height="75" width="120" src="images/indicator-editor/1s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="把四个组件连接起来" href="images/indicator-editor/1.png">连接</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="把股票相对历史资料属性调去14 Days Max LastPrice，平等属性调去等于或大于" href="images/indicator-editor/2.png"><img height="75" width="120" src="images/indicator-editor/2s.png"/></a>
+        <div class="caption">
+            <a title="把股票相对历史资料属性调去14 Days Max LastPrice，平等属性调去等于或大于" rel="lightbox" href="images/indicator-editor/2.png">成功</a>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <a rel="lightbox" title="保存和模拟" href="images/indicator-editor/3.png"><img height="75" width="120" src="images/indicator-editor/3s.png"/></a>
+        <div class="caption">
+            <a rel="lightbox" title="保存和模拟" href="images/indicator-editor/3.png">测试</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+initLightbox();
+</script>
+
+<div class="adv" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6557918363491706";
+/* 336x280, created 10/23/09 */
+google_ad_slot = "8965095522";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+<br />
+
+
+<div class="h-container"><h3 id="share-indicator">什么是最好的方式让我能与朋友分享我的指标？</h3></div>
+<div class="faq">
+    <ul>
+    <li>用鼠标点击指标名称，并选择"输出...".&nbsp;<img align="top" src="images/help/export.png" title="输出" alt="输出"/></li>
+    <li>一个压缩文件将被保存。把压缩文件电邮给您的朋友。</li>
+    <li>您的朋友就能轻易地安装它，通过点击"安装..."，然后选择"从本地文件安装"。&nbsp;<img align="top" src="images/help/install.png" title="安装" alt="安装"/></li>
+    </ul>
+</div>
+<br />
+
+<div class="h-container"><h3 id="skip-n-days">我要如何建立"N 天前的十四天平均走势"？</h3></div>
+<div class="faq">
+在"股票相对历史讯息"中，有个 "skipDay" 项目让您输入"N 天前"。您可在 "skipDay" 输入7，表示一个星期前。&nbsp;<img align="top" src="images/help/skip-n-days.png" title="N 天前"/>
+</div>
+<br />
+
+<div class="h-container"><h3 id="macd">我想要进行"指数平滑异同移动平均线"（MACD）扫描。</h3></div>
+<div class="faq">
+我们把 MACD 功能建立在 "Stock relative history information" 及 "Stock history information"。 我们是采用12及26日的 EMA。
+
+<ul>
+<li>MACD : （12日 EMA - 26日 EMA）</li>
+<li>MACDSignal : MACD 线的 N 日 EMA</li>
+<li>MACDHist : MACD 线 - 讯号线</li>
+</ul>
+	
+</div>
+<br />
+
+</div>
+
+<div id="clear"></div>
+
+</div>
+
+<div id="bottom"></div>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-43627934-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<div id="footer">
+请支持<a href="donation.html" onClick="javascript: pageTracker._trackPageview('/donate');">捐赠</a> &middot; 内容许可证 <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons licenses</a> &middot; <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=108599022497670" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6460490; 
+var sc_invisible=1; 
+var sc_security="b79b64cf"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr hit tracking tool"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6460490/0/b79b64cf/1/"
+alt="tumblr hit tracking tool" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>
