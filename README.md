@@ -1,4 +1,4 @@
 yccheok.github.io
 =================
 
-jstock.org website pages
+jstock.org website pages.
