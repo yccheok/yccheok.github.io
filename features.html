@@ -50,27 +50,8 @@ $(function () {
 //-->
 </script>
 
-<script type="text/javascript">
-    function woahbar_show() { 
-        $('.woahbar').show('bounce', { times:3, distance:15 }, 100); 
-        $('body').animate({"marginTop": "2.4em"}, 250);
-    }
-
-    $().ready(function() {
-        window.setTimeout(function() {
-            woahbar_show();
-        }, 1000);
-    });
-</script>
-
 </head>
 <body>
-
-<div class="woahbar" style="display:none">
-    <span>
-        If you are enjoying JStock, please consider rating us 5 stars in the market. Thank you <a class="woahbar-link" href="http://goo.gl/vPSRXG">LEARN MORE!</a>
-    </span>
-</div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -220,8 +201,9 @@ $(document).bind('click', jsddm_close);
   <div onclick="location.href='features2.html?five-header';" class="header" id="five-header"><img src="images/features/chart.png" /><h3>Charting</h3><div style="clear:both;"></div></div>
   <div onclick="location.href='features2.html?six-header';" class="header" id="six-header"><img src="images/features/upload_to_cloud.png" /><h3>Cloud Storage</h3><div style="clear:both;"></div></div>  
   <div onclick="location.href='features2.html?seven-header';" class="header" id="seven-header"><img src="images/features/money.png" /><h3>Currency Exchange</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features2.html?eight-header';" class="header" id="eight-header"><img src="images/features/news.png" /><h3>Stock Market News</h3><div style="clear:both;"></div></div>
 
-  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="eight-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="nine-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
   
     <div style="margin-top:20px" class="news">
       <p style="margin-bottom:5px">
@@ -311,6 +293,9 @@ $('#seven-header').click(function() {
     location.href='features2.html?seven-header';
 });
 $('#eight-header').click(function() {
+    location.href='features2.html?eight-header';
+});
+$('#nine-header').click(function() {
     pageTracker._trackPageview('/downloads/android'); 
     location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
 });
