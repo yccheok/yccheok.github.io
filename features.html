@@ -202,15 +202,15 @@ $(document).bind('click', jsddm_close);
   <div onclick="location.href='features2.html?six-header';" class="header" id="six-header"><img src="images/features/upload_to_cloud.png" /><h3>Cloud Storage</h3><div style="clear:both;"></div></div>  
   <div onclick="location.href='features2.html?seven-header';" class="header" id="seven-header"><img src="images/features/money.png" /><h3>Currency Exchange</h3><div style="clear:both;"></div></div>
   <div onclick="location.href='features2.html?eight-header';" class="header" id="eight-header"><img src="images/features/news.png" /><h3>Stock Market News</h3><div style="clear:both;"></div></div>
-
+    
   <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="nine-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
   
-    <div style="margin-top:20px" class="news">
-      <p style="margin-bottom:5px">
-      Show your LOVE to JStock!
-      </p>
+  <div onclick="location.href='features2.html?tenth-header';" class="header" id="tenth-header"><img src="images/features/drivewealth.png" /><h3>DriveWealth Live Trading</h3><div style="clear:both;"></div></div>
+
+  <div style="margin-top:20px" class="news">
+      <p style="margin-bottom:5px">Show your LOVE to JStock!</p>
       <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.jstock.org&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
-    </div>
+  </div>
   
 </div>
 
@@ -307,6 +307,9 @@ $('#nine-header').click(function() {
     pageTracker._trackPageview('/downloads/android'); 
     location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
 });
+$('#tenth-header').click(function() {
+    location.href='features2.html?tenth-header';
+});    
 $('#slider .content .text').bind("click", function (e) {          
     var me = $(this);
     var name = me.attr("name");
