@@ -34,7 +34,7 @@ $(function () {
     
     if (query === url || query === "")
     {
-        target = $("#slider #one-header");         
+        target = $("#slider #zero-header");         
     }    
     else
     {
@@ -153,7 +153,18 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="slider">
-  <div onclick="location.href='features2.html?nine-header';" class="header" id="nine-header"><img src="images/features/drivewealth.png" /><h3>美国股市交易</h3><div style="clear:both;"></div></div>
+  <div class="header" id="zero-header"><img src="images/features/drivewealth.png" /><h3>美国股票交易</h3><div style="clear:both;"></div></div>
+  <div class="content" id="zero-content">
+    <div style="cursor: pointer;" class="text" name="feature-dw-small-invest">
+      美国股票交易从$1.99起
+    </div>
+    <div style="cursor: pointer;" class="text" name="feature-dw-practice-acc">
+      无风险练习交易
+    </div>
+    <div style="cursor: pointer;" class="text" name="feature-dw-deposit">
+      多个存款选项
+    </div>
+  </div>
     
   <div class="header" id="one-header"><img src="images/features/realtime.png" /><h3>股票观察表</h3><div style="clear:both;"></div></div>
   <div class="content" id="one-content">
@@ -186,14 +197,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       多种投资组合
     </div>
   </div>
-  
-  <div onclick="location.href='features2.html?four-header';" class="header" id="four-header"><img src="images/features/indicator.png" /><h3>指标过滤</h3><div style="clear:both;"></div></div>
-  <div onclick="location.href='features2.html?five-header';" class="header" id="five-header"><img src="images/features/chart.png" /><h3>图表</h3><div style="clear:both;"></div></div>
-  <div onclick="location.href='features2.html?six-header';" class="header" id="six-header"><img src="images/features/upload_to_cloud.png" /><h3>云储存</h3><div style="clear:both;"></div></div>
-  <div onclick="location.href='features2.html?seven-header';" class="header" id="seven-header"><img src="images/features/money.png" /><h3>货币交换</h3><div style="clear:both;"></div></div>
-  <div onclick="location.href='features2.html?eight-header';" class="header" id="eight-header"><img src="images/features/news.png" /><h3>股市新闻</h3><div style="clear:both;"></div></div>
-
-    
+   
   <div class="header" id="three-header"><img src="images/features/alert.png" /><h3>警报</h3><div style="clear:both;"></div></div>
   <div class="content" id="three-content">
     <div style="cursor: pointer;" class="text" name="feature-alert-email">
@@ -207,10 +211,12 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     </div>     
   </div>
   
-  
-    
-    
-  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="ten-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features2.html?four-header';" class="header" id="four-header"><img src="images/features/indicator.png" /><h3>指标过滤</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features2.html?five-header';" class="header" id="five-header"><img src="images/features/chart.png" /><h3>图表</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features2.html?six-header';" class="header" id="six-header"><img src="images/features/upload_to_cloud.png" /><h3>云储存</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features2.html?seven-header';" class="header" id="seven-header"><img src="images/features/money.png" /><h3>货币交换</h3><div style="clear:both;"></div></div>
+  <div onclick="location.href='features2.html?eight-header';" class="header" id="eight-header"><img src="images/features/news.png" /><h3>股市新闻</h3><div style="clear:both;"></div></div>    
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="nine-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
   
     <div style="margin-top:20px" class="news">
       <p style="margin-bottom:5px">
@@ -222,7 +228,26 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="features-content">
-    <div class="feature-content" id="feature-realtime-country" style="display : none"><a rel="lightbox" title="支援25个国家股市" href="images/features/country-b.png"><img class="shadow" src="images/features/country-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="feature-content" id="feature-dw-small-invest" style="display : none"><a rel="lightbox" title="只需$1.99，就可买卖美国股票" href="images/features/dw-small-invest-b.png"><img class="shadow" src="images/features/dw-small-invest-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="feature-content-text">
+            DriveWealth，一家美国股票经纪公司，是 JStock 合作伙伴。只需<strong>$1.99</strong>，您就可买卖美国股票。
+        </div>
+    </div>
+
+    <div class="feature-content" id="feature-dw-practice-acc" style="display : none"><a rel="lightbox" title="通过虚拟货币，练习账户练习交易" href="images/features/dw-practice-b.png"><img class="shadow" src="images/features/dw-practice-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="feature-content-text">
+          通过虚拟账户，您可以每天24小时，每周7天地练习股票交易。完全0风险。<br/><br/>
+          直到您熟悉交易系统后，您可以马上申请真实交易账户，用真实货币交易。
+        </div>
+    </div>
+    
+    <div class="feature-content" id="feature-dw-deposit" style="display : none"><a rel="lightbox" title="多个存款选项" href="images/features/dw-deposit-b.png"><img class="shadow" src="images/features/dw-deposit-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="feature-content-text">
+            我们支援多种安全可靠的方式，将资金存入您的真实投资账户。您的资金由联邦投资公司监控。 
+        </div>
+    </div>
+    
+    <div class="feature-content" id="feature-realtime-country" style="display : none"><a rel="lightbox" title="支援36个国家股市" href="images/features/country-b.png"><img class="shadow" src="images/features/country-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
         <div class="feature-content-text"><strong>JStock 支援36个国家股市。</strong>以下是支援的股市。
             <div class="country">
             <ul>
@@ -380,9 +405,6 @@ $('#eight-header').click(function() {
     location.href='features2.html?eight-header';
 });
 $('#nine-header').click(function() {
-    location.href='features2.html?nine-header';
-});
-$('#ten-header').click(function() {
     pageTracker._trackPageview('/downloads/android'); 
     location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
 });
