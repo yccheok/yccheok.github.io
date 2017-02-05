@@ -206,7 +206,7 @@ $(document).bind('click', jsddm_close);
     pageTracker._trackPageview();
     } catch(err) {}</script>
 
-  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="ten-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="nine-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
   
     
     <div style="margin-top:20px" class="news">
@@ -235,7 +235,6 @@ $(document).bind('click', jsddm_close);
     <div class="feature-content" id="feature-currency-exchange" style="display : none"><img class="shadow" src="images/features/currency-exchange-s.png"/><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-content-text">By using information from currency exchange server, you may show your foreign stocks in <strong>local currency</strong>.</div></div>
     
     <div class="feature-content" id="feature-stock-market-news" style="display : none"><a rel="lightbox" title="Stock market news" href="images/features/news-b.png"><img class="shadow" src="images/features/news-s.png"/></a><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="feature-stock-market-news">Read individual stock market news.</div></div>   
-    </div></div>
     
 </div>
 
@@ -245,6 +244,9 @@ applyDropShadows("img.shadow", "shadow3");
 
 slider.init('slider',0);
 
+$('#zero-header').click(function() {
+    location.href='features.html?zero-header';
+});
 $('#one-header').click(function() {
     location.href='features.html?one-header';
 });
@@ -254,7 +256,7 @@ $('#two-header').click(function() {
 $('#three-header').click(function() {
     location.href='features.html?three-header';
 });
-$('#ten-header').click(function() {
+$('#nine-header').click(function() {
     pageTracker._trackPageview('/downloads/android'); 
     location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
 });
