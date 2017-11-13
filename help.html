@@ -31,36 +31,7 @@
 
 <script type="text/javascript">
 <!--
-function verify_code(code)
-{
-    window.location = "http://finance.yahoo.com/q?s=" + code;
-}
-
 $(function () {    
-    $('input#verify-input').bind("keypress", function (e) {
-        var code = (e.keyCode ? e.keyCode : e.which);
-         if (code != 13) { //Enter keycode
-            return;
-         }
-    
-        var value = $('input#verify-input').attr('value');
-        if (!value) {
-            alert('Please enter stock code.');
-        }
-        else {
-            verify_code(value);
-        }
-    });
-
-    $('a.verify').bind("click", function (e) {   
-        var value = $('input#verify-input').attr('value');
-        if (!value) {
-            alert('Please enter stock code.');
-        }
-        else {
-            verify_code(value);
-        }
-    });
     
     $('.loading').each(function() {
         var me = $(this);
