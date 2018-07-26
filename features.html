@@ -205,7 +205,7 @@ $(document).bind('click', jsddm_close);
   <div onclick="location.href='features2.html?eight-header';" class="header" id="eight-header"><img src="images/features/news.png" /><h3>Stock Market News</h3><div style="clear:both;"></div></div>
       
   <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="nine-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
-  
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/wenote'); location.href='https://play.google.com/store/apps/details?id=com.yocto.wenote'" class="header" id="ten-header"><img src="images/features/wenote.png" /><h3>WeNote</h3><div style="clear:both;"></div></div>
   
   <div style="margin-top:20px" class="news">
       <p style="margin-bottom:5px">Show your LOVE to JStock!</p>
@@ -302,6 +302,10 @@ $('#eight-header').click(function() {
 $('#nine-header').click(function() {
     pageTracker._trackPageview('/downloads/android'); 
     location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
+});
+$('#ten-header').click(function() {
+    pageTracker._trackPageview('/downloads/wenote'); 
+    location.href='https://play.google.com/store/apps/details?id=com.yocto.wenote';
 });
 
     $('#slider .content .text').bind("click", function (e) {          

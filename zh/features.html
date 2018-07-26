@@ -205,7 +205,8 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
   <div onclick="location.href='features2.html?seven-header';" class="header" id="seven-header"><img src="images/features/money.png" /><h3>货币交换</h3><div style="clear:both;"></div></div>
   <div onclick="location.href='features2.html?eight-header';" class="header" id="eight-header"><img src="images/features/news.png" /><h3>股市新闻</h3><div style="clear:both;"></div></div>    
   <div onclick="javascript: pageTracker._trackPageview('/downloads/android'); location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui'" class="header" id="nine-header"><img src="images/features/android.png" /><h3>Android</h3><div style="clear:both;"></div></div>
-  
+  <div onclick="javascript: pageTracker._trackPageview('/downloads/wenote'); location.href='https://play.google.com/store/apps/details?id=com.yocto.wenote'" class="header" id="ten-header"><img src="images/features/wenote.png" /><h3>微笔记</h3><div style="clear:both;"></div></div>
+
     <div style="margin-top:20px" class="news">
       <p style="margin-bottom:5px">
       对 JStock 说爱您！
@@ -369,6 +370,10 @@ $('#eight-header').click(function() {
 $('#nine-header').click(function() {
     pageTracker._trackPageview('/downloads/android'); 
     location.href='https://play.google.com/store/apps/details?id=org.yccheok.jstock.gui';
+});
+$('#ten-header').click(function() {
+    pageTracker._trackPageview('/downloads/wenote'); 
+    location.href='https://play.google.com/store/apps/details?id=com.yocto.wenote';
 });
 $('#slider .content .text').bind("click", function (e) {          
     var me = $(this);
