@@ -120,10 +120,12 @@ a:hover {
     border: none;
 }
 
-
 .banner {
     height: 100px;
     background: #3B3E44 url('images/banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .breadcrumbs { 
