@@ -112,13 +112,13 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div>
 <p><a href="#install-windows">如何在 Windows 上安装 JStock？</a></p>
 <p><a href="#install-linux">如何在 Linux 上安装 JStock？</a></p>
-<p><a href="#install-mac">如何在 Mac 上安装 JStock？</a></p><br />
+<p><a href="#install-mac">如何在 macOS 上安装 JStock？</a></p><br />
 <p><a href="#upgrade-windows">如何在　Windows　上升级到最新的　JStock？</a></p>
 <p><a href="#upgrade-linux">如何在　Linux　上升级到最新的　JStock？</a></p>
-<p><a href="#upgrade-mac">如何在　Mac　上升级到最新的　JStock？</a></p><br />
+<p><a href="#upgrade-mac">macOS</a></p><br />
 <p><a href="#remove-windows">如何在　Windows　上卸载 JStock？</a></p>
 <p><a href="#remove-linux">如何在　Linux　上卸载 JStock？</a></p>
-<p><a href="#remove-mac">如何在　Mac　上卸载 JStock？</a></p><br />
+<p><a href="#remove-mac">如何在　macOS　上卸载 JStock？</a></p><br />
 </div>
 </div>
 
@@ -145,28 +145,34 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div class="h-container"><h3 id="install-linux">如何在 Linux 上安装 JStock？</h3></div>
 <div class="linux-command">
     <div>cd ~</div>
-    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-bin.zip</div>
-    <div>unzip jstock-1.0.7.60-bin.zip</div>
+    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-jre-linux.zip</div>
+    <div>unzip jstock-1.0.7.60-jre-linux.zip</div>
     <div>cd jstock/</div>
     <div>chmod 755 jstock.sh</div>
     <div>./jstock.sh</div>    
 </div>
 <br />
-<div>
-您需要在您的　Linux　上安装　Java。例如，以下是<a href="http://www.google.com/search?q=Install+Java+In+Ubuntu">如何在　Ubuntu　安装　Java</a> 的谷歌搜索结果。
-</div>
-<br />
-<div class="linux-command">
-    <div>sudo apt update</div>
-    <div>sudo apt install default-jre</div>
-    <div>sudo apt install openjfx</div>    
-</div>
-<br />
 <br />
 
-<div class="h-container"><h3 id="install-mac">如何在 Mac 上安装 JStock？</h3></div>
-<div>
-<a href="../press/install-jstock-on-mac.pdf">install-jstock-on-mac.pdf</a> (由 Roman Kluka 贡献)
+<div class="h-container"><h3 id="install-mac">如何在 macOS 上安装 JStock？</h3></div>
+如果您使用的是配备 M1/M2 芯片的 macOS，请按照以下步骤操作。
+<div class="linux-command">
+    <div>cd ~</div>
+    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-jre-macos-arm.zip</div>
+    <div>unzip jstock-1.0.7.60-jre-macos-arm.zip</div>
+    <div>cd jstock/</div>
+    <div>chmod 755 jstock.sh</div>
+    <div>./jstock.sh</div>    
+</div>
+<br />
+如果您使用的是配备 Intel 芯片的 macOS，请按照以下步骤操作。
+<div class="linux-command">
+    <div>cd ~</div>
+    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-jre-macos-x86.zip</div>
+    <div>unzip jstock-1.0.7.60-jre-macos-x86.zip</div>
+    <div>cd jstock/</div>
+    <div>chmod 755 jstock.sh</div>
+    <div>./jstock.sh</div>    
 </div>
 
 <br />
@@ -221,11 +227,21 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 <br />
 
-<div class="h-container"><h3 id="upgrade-mac">如何在 Mac　上升级到最新的　JStock？</h3></div>
+<div class="h-container"><h3 id="upgrade-mac">如何在 macOS</h3></div>
 <div>
-<a href="../press/install-jstock-on-mac.pdf">install-jstock-on-mac.pdf</a> (由 Roman Kluka 贡献)
+除非在<a href="download.html">下载</a>网页下的黄色讯息框提到，JStock　是被设计为向后兼容的。升级后，您以前的个人资料将保持不变。只需按照 <a href="#install-mac">macOS　安装步骤</a>进行升级，并不需要执行卸载。
 </div>
+<br />
+<div>
+如果您想在升级之前备份，我们非常鼓励您使用<a href="features2.html?six-header">云存储</a>。不过，如果把个人资料存储在由谷歌所提供的服务器让您觉得不舒服，这里是另一项选择。您可以复制以下的整个文件夹到您的拇指驱动器（或任何其他存储设备）。
 
+<div class="faq">
+    <ul>
+    <li>macOS - ~/.jstock/</li>
+    </ul>
+</div>
+如果您需要恢复个人资料，您只需要把备份文件复制到以上所提到的位置。
+</div>
 <br />
 
 <div class="h-container"><h3 id="remove-windows">如何在　Windows　上卸载 JStock？</h3></div>
@@ -245,9 +261,11 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <br />
 
-<div class="h-container"><h3 id="remove-mac">如何在　Mac　上卸载 JStock？</h3></div>
-<div>
-<a href="../press/install-jstock-on-mac.pdf">install-jstock-on-mac.pdf</a> (由 Roman Kluka 贡献)
+<div class="h-container"><h3 id="remove-mac">如何在　macOS　上卸载 JStock？</h3></div>
+<div class="linux-command">
+    <div>cd ~</div>
+    <div>rm -r jstock/</div>
+    <div>rm -r .jstock/</div> 
 </div>
 
 <br />
