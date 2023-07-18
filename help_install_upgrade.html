@@ -112,7 +112,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div>
 <p><a href="#install-windows">How to install JStock on Windows?</a></p>
 <p><a href="#install-linux">How to install JStock on Linux?</a></p>
-<p><a href="#install-mac">How to install JStock on Mac?</a></p><br />
+<p><a href="#install-mac">How to install JStock on macOS?</a></p><br />
 <p><a href="#upgrade-windows">How to upgrade latest JStock on Windows?</a></p>
 <p><a href="#upgrade-linux">How to upgrade latest JStock on Linux?</a></p>
 <p><a href="#upgrade-mac">How to upgrade latest JStock on Mac?</a></p><br />
@@ -145,30 +145,36 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div class="h-container"><h3 id="install-linux">How to install JStock on Linux?</h3></div>
 <div class="linux-command">
     <div>cd ~</div>
-    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-bin.zip</div>
-    <div>unzip jstock-1.0.7.60-bin.zip</div>
+    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-jre-linux.zip</div>
+    <div>unzip jstock-1.0.7.60-jre-linux.zip</div>
     <div>cd jstock/</div>
     <div>chmod 755 jstock.sh</div>
     <div>./jstock.sh</div>    
 </div>
 <br />
-<div>
-You need to install Java in your Linux. For example, here is <a href="http://www.google.com/search?q=Install+Java+In+Ubuntu">Install Java In Ubuntu</a> Google search result.
-</div>
-<br />
-<div class="linux-command">
-    <div>sudo apt update</div>
-    <div>sudo apt install default-jre</div>
-    <div>sudo apt install openjfx</div>    
-</div>
-<br />
 <br />
 
 <div class="h-container"><h3 id="install-mac">How to install JStock on Mac?</h3></div>
-<div>
-<a href="press/install-jstock-on-mac.pdf">install-jstock-on-mac.pdf</a> (Contributed by Roman Kluka)
+If you are using macOS with M1/M2 chip, please follow the following steps.
+<div class="linux-command">
+    <div>cd ~</div>
+    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-jre-macos-arm.zip</div>
+    <div>unzip jstock-1.0.7.60-jre-macos-arm.zip</div>
+    <div>cd jstock/</div>
+    <div>chmod 755 jstock.sh</div>
+    <div>./jstock.sh</div>    
 </div>
-
+<br />
+If you are using macOS with M1/M2 chip, please follow the following steps.
+<div class="linux-command">
+    <div>cd ~</div>
+    <div style="text-align:left">wget https://github.com/yccheok/jstock/releases/download/release_1-0-7-60/jstock-1.0.7.60-jre-macos-x86.zip</div>
+    <div>unzip jstock-1.0.7.60-jre-macos-x86.zip</div>
+    <div>cd jstock/</div>
+    <div>chmod 755 jstock.sh</div>
+    <div>./jstock.sh</div>    
+</div>
+<br />
 <br />
 
 <div class="h-container"><h3 id="upgrade-windows">How to upgrade latest JStock on Windows?</h3></div>
@@ -226,9 +232,19 @@ In case you need to restore your personal data, just copy your backup files back
 
 <div class="h-container"><h3 id="upgrade-mac">How to upgrade latest JStock on Mac?</h3></div>
 <div>
-<a href="press/install-jstock-on-mac.pdf">install-jstock-on-mac.pdf</a> (Contributed by Roman Kluka)
-</div>
-
+    Unless being stated explicitly through the Yellow Announcement Box under <a href="download.html">Download</a>, JStock is designed to be backward compatible. Your previous personal data will remain unchanged after upgrading. Just follow the <a href="#install-mac">Mac Installation Steps</a> to upgrade. There isn't any need to perform uninstall.
+    </div>
+    <br />
+    <div>
+    If you want to backup before upgrade, we highly encourage you to make use of <a href="features2.html?six-header">Cloud Storage</a>. However, if you feel uncomfortable to store personal data in servers provided by Google, here is another alternative. You may copy the following entire folder to your thumb drive (or any other storage device).
+    
+    <div class="faq">
+        <ul>
+        <li>macOS - ~/.jstock/</li>
+        </ul>
+    </div>
+    In case you need to restore your personal data, just copy your backup files back to the above mentioned location.
+    </div>
 <br />
 
 <div class="h-container"><h3 id="remove-windows">How to remove JStock from Windows?</h3></div>
@@ -247,9 +263,11 @@ Go to <i>Start Menu-> All Programs-> JStock-> Uninstall JStock</i> to remove JSt
 
 <br />
 
-<div class="h-container"><h3 id="remove-mac">How to remove JStock from Mac?</h3></div>
-<div>
-<a href="press/install-jstock-on-mac.pdf">install-jstock-on-mac.pdf</a> (Contributed by Roman Kluka)
+<div class="h-container"><h3 id="remove-mac">How to remove JStock from macOS?</h3></div>
+<div class="linux-command">
+    <div>cd ~</div>
+    <div>rm -r jstock/</div>
+    <div>rm -r .jstock/</div> 
 </div>
 
 <br />
